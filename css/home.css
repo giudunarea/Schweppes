@@ -1,0 +1,40 @@
+  .navButton {
+    left: 200px;
+    
+  };
+
+  .sideBar {
+      transform: translate(-200px, 0);
+  };
+
+  #more {
+    display: none;
+}
+
+.underline-btn {
+    position: relative;
+    padding-bottom: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.underline-btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #56AEFF;
+    transition: all 0.2s ease-in-out;
+    transform-origin: left;
+}
+
+.underline-btn:hover::after {
+    width: 100%;
+    transform: scaleX(1);
+}
+
+

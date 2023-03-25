@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png">
+    <title>Astro • Log in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+  <div class="grid h-screen place-items-center bg-gradient-to-r from-[#56AEFF] to-[#F7FF58] animate-gradient-x">
+    <div class="login rounded-lg 2xl:w-[1250px] 2xl:h-[650px] bg-white drop-shadow-md p-[10px]">
+    <div class="flex flex-row justify-around flex-wrap">
+      <div>
+       <img src="./assets/ilustration.png" class="ilustration w-[500px] mt-[3rem]">
+      </div>
+      
+      <div class="flex flex-col">
+        <div class="flex flex-row items-center mt-[4rem]">
+          <h2 class="font-shadows-light pr-[10px] text-3xl">Welcome to Astro</h2> <img src="./assets/logo.png" class="w-[55px]">
+      </div>
+  
+  
+        <div class="space-y-8">
+        <p class="text-sub-text text-lg">A smart assistant for students.</p>
+        <form class="flex flex-col items-center space-y-6 text-[17px]" method="post" action='login.php'>
+        <div class="">
+            <h3>ID:</h3>
+            <input type="text" name="number" id="" class="rounded-md border outline-astro-blue">
+        </div>
+        <div class="">
+          <h3>Username:</h3>
+          <input type="text" name="name" id="" class="rounded-md border outline-astro-blue">
+        </div>
+  
+        <div class="">
+          <h3>Password:</h3>
+          <input type="password" name="pass" id="" class="rounded-md border outline-astro-blue">
+        </div>
+  
+        <div class="">
+          <h3>Confirm password:</h3>
+          <input type="password" name="passcheck" id="" class="rounded-md border outline-astro-blue">
+        </div>
+  
+        <div class="flex flex-row space-x-10 pb-[20px]">
+        <button class="bg-blue-500 hover:bg-blue-600 px-5 py-3 rounded text-white relative btn-inset font-baloo" name='btn' type='submit'><!--<a href='students/home.php?name=<?php $_GET['name']; ?>&id=<?php $_GET['number']; ?>--'>-->Log in</button>
+       
+        </div>
+  
+    </form>
+      </div>
+    </div>
+    </div>
+      
+    </div>
+  </div>
+
+  <style>
+    @media only screen and (max-width: 780px) {
+  .ilustration {
+    display: none;
+  };
+  .login {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .ilustration {
+    display: none;
+  }
+}
+  </style>
+
+
+
+</body>
+</html>
