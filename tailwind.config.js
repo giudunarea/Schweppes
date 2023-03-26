@@ -3,8 +3,7 @@ const colors = require("tailwindcss/colors");
 const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: [
-    "./src/*.{html,js,css} ",
-    "./views/index.ejs",
+    "./views/index.ejs"
   ],
   theme: {
     extend: {
@@ -92,6 +91,7 @@ module.exports = {
   plugins: [
     require("tailwindcss"),
     require("tailwind-scrollbar")({ nocompatible: true }),
+    require('flowbite/plugin'),
   ],
   corePlugins: {
     

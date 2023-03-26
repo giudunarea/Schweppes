@@ -1,40 +1,14 @@
-  .navButton {
-    left: 200px;
-    
-  };
-
-  .sideBar {
-      transform: translate(-200px, 0);
-  };
-
-  #more {
-    display: none;
+canvas {
+  width: 100%;
 }
 
-.underline-btn {
-    position: relative;
-    padding-bottom: 5px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
+
+#eyeicon {
+  color: #405cf5;
+  transition: color 0.5s ease;
 }
 
-.underline-btn::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background-color: #56AEFF;
-    transition: all 0.2s ease-in-out;
-    transform-origin: left;
+#eyeicon.clicked {
+  color: #405cf5;
 }
-
-.underline-btn:hover::after {
-    width: 100%;
-    transform: scaleX(1);
-}
-
 
