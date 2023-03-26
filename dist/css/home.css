@@ -4,11 +4,20 @@ canvas {
 
 
 #eyeicon {
-  color: #405cf5;
+  color: aliceblue;
   transition: color 0.5s ease;
 }
 
 #eyeicon.clicked {
-  color: #405cf5;
+  color: aliceblue;
 }
 
+body {
+    color: white;
+    height: 100vh;
+}
+
+#particles-js {
+    height: 100%;
+    background: #1C2120;
+  }
