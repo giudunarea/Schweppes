@@ -3,7 +3,8 @@ const colors = require("tailwindcss/colors");
 const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: [
-    "./index.html"
+    "./src/*.{html,js,css} ",
+    "./views/index.ejs",
   ],
   theme: {
     extend: {

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/output.css">
+  <link rel="stylesheet" href="./dist/css/home.css">
+  <title>Giu • Log in</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+  <background class="fixed top-0 left-0 w-screen h-screen bg-astro-black font-poppins overflow-hidden" style="background-color: rgba(0, 0, 0, 0.65);">
+    <div class="flex justify-between items-center h-full">
+      <div class="flex flex-col gap-6 ml-[12rem]">
+        <p class="uppercase text-[80px] text-alice-blue" style="user-select: none;">Login</p>
+        <div class="flex gap-1">
+          <p class="text-gray-400" style="user-select: none;">No account?</p>
+          <a href=""
+            class="text-alice-blue  hover:underline hover:decoration-alice-blue underline-offset-3 duration-200 transition-colors ease-linear">
+            Sign up</a>
+        </div>
+      </div>
+      <div class="flex flex-col gap-10 mt-[3rem] mr-[20rem]">
+        <div class="flex flex-col gap-3">
+          <div class="relative z-0">
+            <input type="text" id="floating_standard"
+              class="block py-2.5 px-0 w-[320px] text-md text-alice-blue bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-alice-blue focus:outline-none focus:ring-0 focus:border-button-blue peer"
+              placeholder=" " />
+            <label for="floating_standard"
+              class="absolute text-md text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:alice-blue peer-focus:dark:alice-blue peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Username</label>
+          </div>
+          <div class="relative z-0">
+            <input type="text" id="floating_standard"
+              class="block py-2.5 px-0 w-[320px] text-md text-alice-blue bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-alice-blue focus:outline-none focus:ring-0 focus:border-button-blue peer"
+              placeholder=" " />
+            <label for="floating_standard"
+              class="absolute text-md text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:alice-blue peer-focus:dark:alice-blue peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
+          </div>
+        </div>
+        <button
+          class="text-alice-blue px-6 py-2 text-xl border border-solid border-alice-blue uppercase hover:border-button-blue transition-colors duration-300 ease-in-out hover:text-button-blue">Login</button>
+      </div>
+    </div>
+  </background>
+  <script src="../scripts/home.js"></script>
+</body>
+
+</html>
