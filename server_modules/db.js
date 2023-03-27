@@ -11,7 +11,6 @@ const user_schema = new Schema({
   password: { type: String, required: true },
   email: { type: String, required: true },
   created: { type: Date, default: Date.now },
-
   auth: String
 });
 

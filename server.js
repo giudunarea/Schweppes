@@ -9,13 +9,16 @@ app.use(bodyparser.urlencoded({ extended: false }))
 app.use(bodyparser.json())
 
 app.set('view engine', 'ejs')
-
 app.use('/dist', express.static('dist'));
 
 const db = require('./server_modules/db.js')
 
 const auth_router = require('./routes/auth.js')
-app.use('/',auth_router)
+app.use('/', auth_router)
+
+app.get('/home', function(req, res) {
+  res.render('index')
+})
 
 app.listen(3000, () => {
   console.log(`Example app listening on port 3000`)
