@@ -18,6 +18,7 @@ body {
 }
 
 #particles-js {
-    height: 100%;
-    background: #1C2120;
-  }
+  height: 100vh;
+  background: #1C2120;
+  width: 100vw;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dist/output.css">
+  <link rel="stylesheet" href="../dist/css/home.css">
+  <link rel="icon" type="image/x-icon" href="./assets/logo.png">
+  <title>Giu • Log in</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+  
+</head>
+
+<body id="particles-js" class="overflow-hidden">
+   <background class="fixed top-0 left-0 w-screen h-screen font-poppins overflow-hidden">
+    <div class="flex xl:flex-row 2xl:flex-row lg:flex-row md:flex-row flex-col justify-between items-center h-full ">
+      <div class="flex flex-col gap-6  mt-[6rem] md:ml-[6rem] md:mt-0 lg:ml-[8rem] md:mb-[7rem] lg:mt-0 lg:mb-[7rem] xl:ml-[10rem] xl:mt-0 xl:mb-[7rem] 2xl:mt-0 2xl:ml-[12rem] 2xl:mb-[7rem]">
+        <p class="uppercase text-[80px] text-alice-blue" style="user-select: none;">Sign up</p>
+        <div class="flex gap-1">
+          <p class="text-gray-400" style="user-select: none;">Do you have an account?</p>
+          <a href="/login"
+            class="text-alice-blue  hover:underline hover:decoration-alice-blue underline-offset-3 duration-200 transition-colors ease-linear">
+            Log in</a>
+        </div>
+      </div>
+      <div class="flex flex-col gap-10 justify-center h-full  md:mb-0 md:mt-[3rem] md:mr-[10rem] lg:mb-0 lg:mt-[3rem] lg:mr-[12rem] xl:mb-0 xl:mt-[3rem] xl:mr-[14rem] 2xl:mb-0 2xl:mt-[3rem] 2xl:mr-[20rem]">
+        <div class="flex flex-col gap-3">
+          <div class="relative z-0">
+            <input type="text" id="floating_standard"
+              class="block py-2.5 px-0 2xl:w-[320px] xl:w-[300px] lg:w-[300px] md:w-[250px] w-full text-md text-alice-blue bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-alice-blue focus:outline-none focus:ring-0 focus:border-button-blue peer"
+              placeholder=" " />
+            <label for="floating_standard"
+              class="absolute text-md text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:alice-blue peer-focus:dark:alice-blue peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Username</label>
+          </div>
+          <div class="relative z-0">
+            <input type="text" id="floating_standard"
+              class="block py-2.5 px-0 2xl:w-[320px] xl:w-[300px] lg:w-[300px] md:w-[250px] w-full text-md text-alice-blue bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-alice-blue focus:outline-none focus:ring-0 focus:border-button-blue peer"
+              placeholder=" " />
+            <label for="floating_standard"
+              class="absolute text-md text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:alice-blue peer-focus:dark:alice-blue peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email</label>
+          </div>
+          <div class="relative z-0">
+            <input type="password" id="password"
+              class="block py-2.5 px-0 2xl:w-[320px] xl:w-[300px] lg:w-[300px] md:w-[250px] w-full text-md text-alice-blue bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-alice-blue focus:outline-none focus:ring-0 focus:border-button-blue peer"
+              placeholder=" " />
+            <label for="floating_standard"
+              class="absolute text-md text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:alice-blue peer-focus:dark:alice-blue peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
+              <button type="button" class="absolute inset-y-0 right-0 flex items-center pr-3">
+                <i class="fa-solid fa-eye text-white font-bold transition-colors ease-in-out" id="eyeicon" onclick="showPass()"></i>
+            </button>
+          </div>
+          <div class="relative z-0">
+            <input type="password" id="confirmpassword"
+              class="block py-2.5 px-0 2xl:w-[320px] xl:w-[300px] lg:w-[300px] md:w-[250px] w-full text-md text-alice-blue bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-alice-blue focus:outline-none focus:ring-0 focus:border-button-blue peer"
+              placeholder=" " />
+            <label for="floating_standard"
+              class="absolute text-md text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:alice-blue peer-focus:dark:alice-blue peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm Password</label>
+          </div>
+        </div>
+        <button
+          class="text-alice-blue px-6 py-2 text-2xl border border-solid border-alice-blue uppercase hover:border-button-blue transition-colors duration-300 ease-in-out hover:text-button-blue">Sign in</button>
+      </div>
+    </div>
+  </background>
+<script src="../dist/scripts/home.js"></script>
+<script src="https://particlesjs.nathanielx3rd.repl.co/particles.js"></script>
+<script src="../dist/scripts/app.js"></script>
+</body>
+
+</html> 
