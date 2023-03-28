@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+` <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -27,27 +27,27 @@
         <div class="flex gap-1">
           <p class="text-gray-400" style="user-select: none;">No account?</p>
           <a href="/register"
-            class="text-alice-blue  hover:underline hover:decoration-alice-blue underline-offset-3 duration-200 transition-colors ease-linear">
+            class="text-alice-blue hover:underline hover:decoration-alice-blue underline-offset-3 duration-200 transition-colors ease-linear">
             Sign up</a>
         </div>
       </div>
       <div class="flex flex-col gap-10 justify-center h-full  md:mb-[6rem] md:mt-[3rem] md:mr-[10rem] lg:mb-[6rem] lg:mt-[3rem] lg:mr-[12rem] xl:mb-[6rem] xl:mt-[3rem] xl:mr-[14rem] 2xl:mb-[6rem] 2xl:mt-[3rem] 2xl:mr-[20rem]">
         <div class="flex flex-col gap-3">
           <div class="relative z-0">
-            <input type="text" id="floating_standard"
+            <input type="text" id="username_login"
               class="block py-2.5 px-0 2xl:w-[320px] xl:w-[300px] lg:w-[300px] md:w-[250px] w-full text-md text-alice-blue bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-alice-blue focus:outline-none focus:ring-0 focus:border-button-blue peer"
               placeholder=" " />
-            <label for="floating_standard"
+            <label for=""
               class="absolute text-md text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:alice-blue peer-focus:dark:alice-blue peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Username</label>
           </div>
           <div class="relative z-0">
-            <input type="password" id="password"
+            <input type="password" id="password_login"
               class="block py-2.5 px-0 2xl:w-[320px] xl:w-[300px] lg:w-[300px] md:w-[250px] w-full text-md text-alice-blue bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-alice-blue focus:outline-none focus:ring-0 focus:border-button-blue peer"
               placeholder=" " />
-            <label for="floating_standard"
+            <label for=""
               class="absolute text-md text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:alice-blue peer-focus:dark:alice-blue peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
               <button type="button" class="absolute inset-y-0 right-0 flex items-center pr-3">
-                <i class="fa-solid fa-eye text-white font-bold transition-colors ease-in-out" id="eyeicon" onclick="showPass()"></i>
+                <i class="fa-solid fa-eye text-white font-bold transition-colors ease-in-out" id="eyeicon" onclick="showPassLogin()"></i>
             </button>
           </div>
         </div>
@@ -57,8 +57,9 @@
     </div>
   </background>
 <script src="https://particlesjs.nathanielx3rd.repl.co/particles.js"></script>
-<script src="../dist/scripts/app.js"></script>
-<script src="../dist/scripts/home.js"></script>
+<script src="../dist/scripts/particles/app.js"></script>
+<script src="../dist/scripts/pages/login-register/home.js"></script>
+<script src="../dist/scripts/pages/login-register/register.js"></script>
 </body>
 
 </html> 

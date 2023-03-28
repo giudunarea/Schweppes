@@ -22,3 +22,14 @@ body {
   background: #1C2120;
   width: 100vw;
 }
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+
+
+
+
+
+

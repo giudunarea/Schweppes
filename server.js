@@ -1,5 +1,8 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
+
+const http = require('http')
+const server = http.createServer(app)
 
 const cookie_parser = require('cookie-parser')
 app.use(cookie_parser())
@@ -13,14 +16,17 @@ app.use('/dist', express.static('dist'));
 
 const db = require('./server_modules/db.js')
 
+let sv_wsocket = require('./server_modules/sv_wsocket.js')
+sv_wsocket.init()
+sv_wsocket = sv_wsocket.get()
+
 const auth_router = require('./routes/auth.js')
 app.use('/', auth_router)
 
-app.get('/home', function(req, res) {
-  res.render('index')
-})
+app.get('/', function(req, res) {
+  res.render('index.ejs');
+});
 
-app.listen(3000, () => {
+server.listen(3000, () => {
   console.log(`Example app listening on port 3000`)
 })
-

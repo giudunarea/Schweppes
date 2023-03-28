@@ -5,8 +5,8 @@ const email_validator = require('email-validator');
 const bcrypt = require('bcrypt');
 
 const db = require('../server_modules/db.js')
-const randomstring = require('../dist/scripts/randomstring.js')
-const strlen = require('../dist/scripts/strlen.js')
+const randomstring = require('../dist/scripts/utility/randomstring.js')
+const strlen = require('../dist/scripts/utility/strlen.js')
 
 router.post('/register', async function(req, res) {
   if (!email_validator.validate(req.body.email)) res.end("Bad email")
@@ -42,6 +42,27 @@ router.post("/login" , async function(req, res){
   }else{
     return res.end("User not found");
   }  
+})
+
+router.post("/logout" , async function(req,res){
+ let foundUser = await db.user.findOne({auth:req.cookies.auth});
+ if (foundUser){
+   console.log("found user!")
+   res.clearCookie("auth");
+   
+   let authtoken_ = randomstring.generate(50)
+  async function checkauth_recursive(){
+    if (await db.user.findOne({ auth: authtoken_ })) {
+    authtoken_ = randomstring.generate(50);
+    checkauth_recursive();
+  }}
+  checkauth_recursive();
+  
+  foundUser.auth = authtoken_
+  foundUser.save();
+
+  res.send("Logged out");
+ }else{res.status(404).end()}
 })
 
 router.get('/register', (req, res) => {

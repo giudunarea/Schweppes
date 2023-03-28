@@ -2,7 +2,7 @@ var Mongoose = require('mongoose')
 var Schema = Mongoose.Schema
 
 async function connect_db() {
-  await Mongoose.connect('mongodb+srv://admin:HlIHVb6bwOj0PTaB@sveps.mmbevcb.mongodb.net/?retryWrites=true&w=majority');
+  await Mongoose.connect(process.env.pass);
 }
 connect_db().then(function() { console.log("Connected to db") }).catch(function(err) { warn(err) })
 
