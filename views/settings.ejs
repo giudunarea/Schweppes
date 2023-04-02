@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="../dist/output.css" rel="stylesheet">
+      <link href="../dist/styleforall.css" rel="stylesheet">
+   </head>
+   <body class="bg-[#040622] overflow-hidden">
+      <div class="h-screen flex">
+         <div class="h-screen bg-[#333333] rounded text-center overflow-y-scroll w-24 lg:overflow-y-hidden">
+            <a href="#account" id="acc-button"><img src="https://cdn-icons-png.flaticon.com/512/3177/3177283.png" class="w-auto h-auto block"></a>
+            <% if(user.privilege == "Admin"){ %>
+            <a href="#admin" id="adm-button"><img src="https://cdn-icons-png.flaticon.com/512/2099/2099058.png" class="w-auto h-auto block"></a>
+            <% } %>
+         </div>
+              
+         <div id="acc-page" class="text-white bg-white w-full">123
+         </div>
+              
+         <div id="adm-page" class="pl-8 mt-4 w-full hidden">
+            <h1 class="text-white text-3xl mb-4">Admin Panel | <%= user.username || "ERROR" %></h1>
+            <hr>
+            <h3 class="text-white text-3xl mb-4">Newsletters</h3>
+            <ul class="max-w-md divide-y divide-gray-200 divide-gray-700">
+              <%if(newsletters.length == 0) {%> <p class="text-white mb-4">No pending newsletters</p><%}%>
+               <%for (let i = 0 ; i < newsletters.length ; i++ ) {%>
+               <li class="pb-3 sm:pb-4">
+                  <div class="flex items-center space-x-4">
+                     <div class="flex-1 min-w-0">
+                        <p class="text-sm font-medium text-gray-900 truncate text-white">
+                           <%= newsletters[i].id_%>
+                        </p>
+                        <p class="text-sm text-gray-500 truncate text-gray-400">
+                           <%= newsletters[i].html %>
+                        </p>
+                     </div>
+                  </div>
+               </li>
+               <%}%>
+            </ul>
+            
+            <h1 class="text-white text-3xl mb-4">Add Newsletters</h1>
+
+              <input type="text" placeholder="Newsletter Title" class="w-3/4 block block sm text-white-900 border border-gray-300 rounded-lg mt-4 bg-gray-50 text-gray-400 focus:outline-none bg-gray-700 border-gray-600 placeholder-gray-400" type="text" id="title_input">
+                 
+            <label class="block mb-2 mt-4 text-sm font-medium text-gray-900 text-white" for="file_input">Upload News</label>
+            <input class="block w-full text-sm text-white-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 text-gray-400 focus:outline-none bg-gray-700 border-gray-600 w-3/4 placeholder-gray-400" id="file_input" type="file" accept=".html">
+
+            <button class=" bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 mt-4 border border-gray-400 rounded shadow" onclick="push_newsletter()">
+            Push Newsletter
+            </button>
+            <hr>
+         </div>
+      </div>
+      <script src="../dist/scripts/pages/settings/main.js"></script>
+   </body>
+</html>

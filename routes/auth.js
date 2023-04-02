@@ -5,7 +5,6 @@ const email_validator = require('email-validator');
 const bcrypt = require('bcrypt');
 
 const db = require('../server_modules/db.js')
-const mail_transporter = require('../server_modules/mail_transporter.js')
   
 const randomstring = require('../dist/scripts/utility/randomstring.js')
 const strlen = require('../dist/scripts/utility/strlen.js')
@@ -30,27 +29,20 @@ router.post('/register', async function(req, res) {
 
   new_user.auth = authtoken_
   new_user.save();
-
-  await mail_transporter.sendMail({
-  from: mail_transporter.options.auth.user,
-  to: new_user.email,
-  subject: "Da banii",
-  text: "Da banii ca te tai"
-  })
   
-  res.cookie('auth', new_user.auth, { maxAge: 90000 }).end(JSON.stringify({message:"Authorized"}));
+  res.cookie('auth', new_user.auth, { maxAge: 300000 }).end(JSON.stringify({message:"Authorized"}));
 })
 
 router.post("/login", async function(req, res) {
   let foundUser = await db.user.findOne({ username: req.body.username })
   if (foundUser) {
     if (await bcrypt.compare(req.body.password, foundUser.password)) {
-      res.cookie('auth', foundUser.auth, { maxAge: 90000 }).send("Authenticated");
+      res.cookie('auth', foundUser.auth, { maxAge: 300000 }).send(JSON.stringify({message:"Authenticated"}));
     } else {
-      return res.end("Incorrect password");
+      return res.status(401).end(JSON.stringify({message:"Incorrect password"}));
     }
   } else {
-    return res.end("User not found");
+    return res.status(404).end(JSON.stringify({message:"User not found"}));
   }
 })
 

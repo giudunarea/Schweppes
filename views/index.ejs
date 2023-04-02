@@ -21,73 +21,77 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
   
 </head>
 
-<body class="font-poppins text-black">
-<div class="flex flex-col h-screen">
-    <nav class="flex justify-between mx-[4rem] my-[2rem] items-center">
-      <logo>
-        <p class="text-2xl text-black" style="user-select: none;">Giu</p>
-      </logo>
-      <ol class="flex gap-6 text-lg items-center text-black">
-        <li>About</li>
-        <li>Contact</li>
-        <li>Services</li>
-        <button>Login</button>
-        <button class="text-alice-blue p-2 text-xl bg-button-blue uppercase mt-[10px] text-left">Sign Up</button>
-      </ol>
-    </nav>
-    <div class="flex-1 flex flex-row">
-      <div class="bg-gray-200 flex-1">
-        <div class="flex flex-col gap-10 mt-[6rem] ml-[4rem]">
-          <div class="flex flex-col gap-2 items-start uppercase text-left">
-            <p class="text-xl text-sub-text">Giu projects</p>
-            <div class="flex flex-col">
-              <p class="text-[3rem]">Don't try to be original</p>
-              <p class="text-[3rem] text-button-blue">Just try to be good</p>
-            </div>
-            <button class="text-alice-blue px-6 py-2 text-xl bg-button-blue uppercase mt-[10px] text-left">Learn
-              more</button>
+<body class="font-poppins" id="particles-js">
+  <background class="fixed top-0 left-0 w-screen h-screen">
+    <wrap class="flex justify-center">
+      <section class="bg-cover bg-center w-[98%] rounded-lg mt-[1rem]" style="background-image: url('../dist/images/background.png'); ">
+        <nav
+          class="flex justify-between items-center  text-alice-blue bg-[#282E30] h-[60px] py-[3rem] px-[4rem] bg-opacity-40">
+          <logo>
+            <h1 class="text-[1.6rem]"><span
+                class="bg-gradient-to-r from-button-blue to-purple-500 text-transparent bg-clip-text">Giu</span>Projects
+            </h1>
+          </logo>
+          <ol class="flex gap-6 text-lg items-center">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+          </ol>
+          <div class="flex gap-4">
+            <button class="text-lg">
+              Login
+            </button>
+            <button
+              class="text-alice-blue py-1 px-4 text-lg border border-solid border-alice-blue hover:border-button-blue transition-colors duration-300 ease-in-out hover:text-button-blue"
+              draggable="false" style="user-select: none;">
+              Register
+            </button>
           </div>
-
-          <div class="flex gap-1 mt-[15px]">
-            <div class="flex flex-col gap-1">
-              <div class="flex uppercase gap-2 items-center">
-                <i class="fa-regular fa-lightbulb text-2xl text-button-blue"></i>
-                <p class="text-lg">big ideas</p>
+        </nav>
+        <section class="mb-[7rem]">
+          <p class="uppercase text-[#DEE2E6] pt-10 px-[5rem]">about us</p>
+          <div class="px-[5rem] flex justify-between">
+            <div class="flex flex-col">
+              <div class="flex flex-col ">
+                <p class="text-[3rem] bg-gradient-to-r from-button-blue to-purple-500 text-transparent bg-clip-text">
+                  Empowering </p>
+                <p class="text-[3rem] text-[#DEE2E6]">your digital world</p>
               </div>
-              <p class="text-md text-sub-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut ligula neque. 
-              </p>
-            </div>
-            <div class="flex flex-col gap-1">
-              <div class="flex uppercase gap-2 items-center">
-                <i class="fa-solid fa-book text-2xl text-button-blue"></i>
-                <p class="text-lg">Documentation</p>
+              <div class="flex gap-1 items-center hover:underline no-underline underline-offset-1 text-[#DEE2E6] mt-6">
+                <p class="text-[#DEE2E6] text-sm">Check us out! <i class="fa-solid fa-arrow-right text-button-blue"></i>
+                </p>
               </div>
-              <p class="text-md text-sub-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut ligula neque. 
-              </p>
             </div>
-            <div class="flex flex-col gap-1">
-              <div class="flex uppercase gap-2 items-center">
-                <i class="fa-solid fa-earth-americas text-2xl text-button-blue"></i>
-                <p class="text-lg">Support</p>
-              </div>
-              <p class="text-md text-sub-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut ligula neque. 
-              </p>
-            </div>
+  
             
+          </div>
+        </section>
+      </section>
+    </wrap>
+    <section class="pt-10 px-[5.5rem]">
+      <p class="text-[#DEE2E6] uppercase">Features</p>
+      <div class="flex flex-row justify-between">
+        <div class="flex flex-col ">
+          <p class="text-[3rem] bg-gradient-to-r from-button-blue to-purple-500 text-transparent bg-clip-text">
+            We build the base</p>
+          <p class="text-[3rem] text-[#DEE2E6]">for your future</p>
+        </div>
+        <div class="basis-2/6 mt-[1rem]">
+          <div class="flex flex-col">
+            <p class="text-sm text-[#DEE2E6]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis ipsum ut dolor ultricies, in porttitor quam sollicitudin. Integer quis eros pulvinar, fringilla nunc non, convallis orci. Sed efficitur urna porttitor massa sagittis sagittis. Proin ac justo neque. Praesent sit amet facilisis lorem, eu luctus nisl. Donec mauris massa 
+            </p>
           </div>
         </div>
       </div>
-      <div class="bg-gray-300 flex-1">
+    </section>
 
-      </div>
-    </div>
-  </div>
+    
+  </background>
+  
   <script src="https://particlesjs.nathanielx3rd.repl.co/particles.js"></script>
   <script src="./scripts/app.js"></script>
-  <script src="./scripts/home.js"></script>
   <script src="./scripts/particles.min.js"></script>
 </body>
 </html>

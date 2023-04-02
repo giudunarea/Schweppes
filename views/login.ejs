@@ -51,15 +51,31 @@
             </button>
           </div>
         </div>
-        <button
+        <button id="submit"
           class="text-alice-blue px-6 py-2 text-2xl border border-solid border-alice-blue uppercase hover:border-button-blue transition-colors duration-300 ease-in-out hover:text-button-blue">Login</button>
       </div>
+    </div>
+
+    <div class="popcontainer z-2" id="popup">
+      <div class="flex h-screen w-screen items-center justify-center">
+    <alert class="bg-[#12141a] py-8 px-8 flex items-center flex-col rounded-md gap-3 font-poppins">
+      <div class="border-[10px] border-error border-opacity-30 inline-flex items-center justify-center overflow-hidden rounded-full">
+        <i class="fa-solid fa-circle-xmark text-error text-[3rem]"></i>
+      </div>      
+      <p class="text-alice-blue text-xl">Something went wrong!?</p>
+      <div class="flex items-center">
+        <ol class="list-disc text-left flex flex-col gap-1 text-[#8a8b8e]" id="errors_list">
+          
+        </ol>
+      </div>
+      <button class="text-alice-blue px-6 py-2 text-xl bg-button-blue uppercase mt-[10px]" id="close_popup">Got it</button>
+    </alert>
+  </div>
     </div>
   </background>
 <script src="../dist/scripts/particles/script.js"></script>
 <script src="../dist/scripts/particles/app.js"></script>
-<script src="../dist/scripts/pages/login-register/home.js"></script>
-<script src="../dist/scripts/pages/login-register/register.js"></script>
+<script src="../dist/scripts/pages/login-register/login.js"></script>
 </body>
 
 </html> 

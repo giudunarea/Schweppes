@@ -18,13 +18,13 @@ const db = require('./server_modules/db.js')
 
 const auth_router = require('./routes/auth.js')
 app.use('/', auth_router)
+
+const generic_router = require('./routes/generic.js');
+app.use('/', generic_router)
+
 const newsletter_router = require('./routes/newsletter.js');
-app.use('/newsletter' , newsletter_router)
+app.use('/newsletters', newsletter_router)
 
-app.get('/', function(req, res) {
-  res.render('index.ejs');
+server.listen(3000, function(){
+  console.log("Started")
 });
-
-server.listen(3000, () => {
-  console.log(`Example app listening on port 3000`)
-})

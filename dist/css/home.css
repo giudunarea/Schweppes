@@ -23,9 +23,35 @@ body {
   width: 100vw;
 }
 
+
+.show-menu {
+  top: 80px;
+  opacity: 100%;
+}
+
+.hide-menu {
+  top: -80px;
+  opacity: 0%;
+}
+
+
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
+
+@media (max-width: 768px) {
+  .md\\:hidden {
+    display: block !important;
+  }
+  .md\\:static {
+    position: fixed !important;
+    top: 64px;
+    left: 0;
+    width: 100%;
+  }
+}
+
 
 .popcontainer {
                 opacity: 0;

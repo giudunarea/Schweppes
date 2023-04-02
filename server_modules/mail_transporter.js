@@ -3,9 +3,9 @@ const nodemailer = require('nodemailer')
 let transporter = nodemailer.createTransport({
   service:"hotmail",
   auth:{
-    user:"svepsgiu@outlook.com",
-    pass:"giusveps123"
-  }
+    user:"giusvepsgiu@outlook.com",
+    pass:"svepsgiu123"
+  },
 })
 
 module.exports = transporter

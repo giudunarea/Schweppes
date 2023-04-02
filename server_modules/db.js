@@ -18,9 +18,8 @@ const user_schema = new Schema({
 });
 
 const news_schema = new Schema({
-  title : String,
-  html : String,
-  permanent : Boolean
+  title: String,
+  html : String
 });
 
 const news = Mongoose.model('news' , news_schema);
