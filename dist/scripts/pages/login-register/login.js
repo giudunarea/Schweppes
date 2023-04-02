@@ -19,13 +19,17 @@ inputs[2].addEventListener('click',async function(){
     if (json.message == "Authenticated"){
       window.location.href = '/'
     }else{
+      let newLi = document.createElement("li");
+      newLi.innerHTML = json.message;
+      errors_list.appendChild(newLi);
       popup.classList.add("show");
-      window.alert(json.message)
     }
   })
 })
 
- close_popup.addEventListener("click", function() {
+close_popup.addEventListener("click", function() {
   popup.classList.remove("show");
-  error_list = [];
- })
+  while (errors_list.firstChild) {
+    errors_list.removeChild(errors_list.lastChild);
+  }
+})

@@ -23,6 +23,15 @@ body {
   width: 100vw;
 }
 
+@media (max-width: 767px) {
+  /* This CSS rule will only apply if the screen width is 767 pixels or less,
+     which is a common breakpoint for mobile devices. */
+  #navbar {
+    
+    display: none;
+  }
+}
+
 
 .show-menu {
   top: 80px;

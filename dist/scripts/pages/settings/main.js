@@ -28,7 +28,7 @@ function push_newsletter() {
     },
     body: JSON.stringify({
       title: document.getElementById('title_input').value,
-      html: document.getElementById('file_input').value
+      html: document.getElementById('content_input').value
     })
   })
 }

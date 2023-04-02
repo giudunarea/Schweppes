@@ -2,27 +2,34 @@ const express = require('express');
 const router = express.Router();
 
 const db = require('../server_modules/db.js')
+const sessions = require('../server_modules/sessions.js')
 const mail_transporter = require('../server_modules/mail_transporter.js')
 
 router.post('/add', async function(req, res) {
-  console.log()
-  let admin = await db.user.findOne({ privilege: "Admin", auth: req.cookies.auth })
+
+  let session_id = req.cookies.auth
+
+  if (sessions.Data[session_id]) {
+
+    if(sessions.Data[session_id].isExpired() == true){
+      delete sessions.Data[session_id]
+      res.clearCookie('auth');
+      return res.redirect('/')
+    }
+
+  let admin = await db.user.findOne({ privilege: "Admin", username: sessions.Data[session_id].username })
+    
   if (admin) {
     let new_page = new db.news;
     new_page.html = req.body.html,
-      new_page.save()
+    new_page.title = req.body.title
+    new_page.save()
     res.send(JSON.stringify({ message: "Page added successfuly!" }))
   }
   else res.status(401).send("Unauthorized");
+  } else res.status(401).send("Unauthorized");
 });
 
-router.get('/get', async function(req, res) {
-  let admin = await db.user.findOne({ privilege: "Admin", auth: req.cookies.auth })
-  if (admin) {
-    res.send(JSON.stringify({ data: await db.news.find({}) }))
-  }
-  else res.status(401).send("Unauthorized");
-})
 
 let index = 0;
 
