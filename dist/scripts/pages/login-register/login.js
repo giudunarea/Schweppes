@@ -19,6 +19,7 @@ inputs[2].addEventListener('click',async function(){
     if (json.message == "Authenticated"){
       window.location.href = '/'
     }else{
+      popup.classList.add("show");
       window.alert(json.message)
     }
   })
