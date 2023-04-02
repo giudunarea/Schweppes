@@ -16,12 +16,10 @@ app.use('/dist', express.static('dist'));
 
 const db = require('./server_modules/db.js')
 
-let sv_wsocket = require('./server_modules/sv_wsocket.js')
-sv_wsocket.init()
-sv_wsocket = sv_wsocket.get()
-
 const auth_router = require('./routes/auth.js')
 app.use('/', auth_router)
+const newsletter_router = require('./routes/newsletter.js');
+app.use('/newsletter' , newsletter_router)
 
 app.get('/', function(req, res) {
   res.render('index.ejs');

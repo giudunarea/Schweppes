@@ -27,9 +27,24 @@ body {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.popcontainer {
+                opacity: 0;
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background-color: rgba(0, 0, 0, 0.3);
+                pointer-events: none;
+                transition: opacity 0.2s ease-in-out;
+            }
 
-
-
+            .popcontainer.show {
+                pointer-events: auto;
+                display: block;
+                opacity: 1;
+            }
 
 
 

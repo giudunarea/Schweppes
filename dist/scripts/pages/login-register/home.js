@@ -15,7 +15,6 @@ function showPassRegister() {
     y.type = "password";
    
   }
-
 }
 
 function showPassLogin() {

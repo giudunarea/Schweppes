@@ -21,7 +21,73 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
   
 </head>
 
-<body>
+<body class="font-poppins text-black">
+<div class="flex flex-col h-screen">
+    <nav class="flex justify-between mx-[4rem] my-[2rem] items-center">
+      <logo>
+        <p class="text-2xl text-black" style="user-select: none;">Giu</p>
+      </logo>
+      <ol class="flex gap-6 text-lg items-center text-black">
+        <li>About</li>
+        <li>Contact</li>
+        <li>Services</li>
+        <button>Login</button>
+        <button class="text-alice-blue p-2 text-xl bg-button-blue uppercase mt-[10px] text-left">Sign Up</button>
+      </ol>
+    </nav>
+    <div class="flex-1 flex flex-row">
+      <div class="bg-gray-200 flex-1">
+        <div class="flex flex-col gap-10 mt-[6rem] ml-[4rem]">
+          <div class="flex flex-col gap-2 items-start uppercase text-left">
+            <p class="text-xl text-sub-text">Giu projects</p>
+            <div class="flex flex-col">
+              <p class="text-[3rem]">Don't try to be original</p>
+              <p class="text-[3rem] text-button-blue">Just try to be good</p>
+            </div>
+            <button class="text-alice-blue px-6 py-2 text-xl bg-button-blue uppercase mt-[10px] text-left">Learn
+              more</button>
+          </div>
 
+          <div class="flex gap-1 mt-[15px]">
+            <div class="flex flex-col gap-1">
+              <div class="flex uppercase gap-2 items-center">
+                <i class="fa-regular fa-lightbulb text-2xl text-button-blue"></i>
+                <p class="text-lg">big ideas</p>
+              </div>
+              <p class="text-md text-sub-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut ligula neque. 
+              </p>
+            </div>
+            <div class="flex flex-col gap-1">
+              <div class="flex uppercase gap-2 items-center">
+                <i class="fa-solid fa-book text-2xl text-button-blue"></i>
+                <p class="text-lg">Documentation</p>
+              </div>
+              <p class="text-md text-sub-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut ligula neque. 
+              </p>
+            </div>
+            <div class="flex flex-col gap-1">
+              <div class="flex uppercase gap-2 items-center">
+                <i class="fa-solid fa-earth-americas text-2xl text-button-blue"></i>
+                <p class="text-lg">Support</p>
+              </div>
+              <p class="text-md text-sub-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut ligula neque. 
+              </p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-300 flex-1">
+
+      </div>
+    </div>
+  </div>
+  <script src="https://particlesjs.nathanielx3rd.repl.co/particles.js"></script>
+  <script src="./scripts/app.js"></script>
+  <script src="./scripts/home.js"></script>
+  <script src="./scripts/particles.min.js"></script>
 </body>
 </html>
