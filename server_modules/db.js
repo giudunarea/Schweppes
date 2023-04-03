@@ -17,10 +17,8 @@ const user_schema = new Schema({
 
 const city_schema = new Schema({
   name: String,
-  banner : String,
-  interests:[
-    
-  ]
+  banner_image : String,
+  interests:[]
 });
 
 const news_schema = new Schema({

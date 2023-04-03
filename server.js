@@ -24,6 +24,9 @@ app.use('/', auth_router)
 const generic_router = require('./routes/generic.js');
 app.use('/', generic_router)
 
+const cities_router = require('./routes/generic.js');
+app.use('/cities', cities_router)
+
 const newsletter_router = require('./routes/newsletter.js');
 app.use('/newsletters', newsletter_router)
 server.listen(3000, function(){

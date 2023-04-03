@@ -1,5 +1,10 @@
 canvas {
-  width: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100vw; /* equivalent to w-screen in Tailwind */
+  height: 100vh; /* equivalent to h-screen in Tailwind */
 }
 
 
@@ -19,8 +24,8 @@ body {
 
 #particles-js {
   height: 100vh;
-  background: #1C2120;
   width: 100vw;
+  background: #1C2120;
 }
 
 @media (max-width: 767px) {

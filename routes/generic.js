@@ -17,7 +17,6 @@ router.get('/cities', function(req, res) {
 });
 
 
-
 router.get('/settings', async function(req, res) {
   let session_id = req.cookies.auth
 
