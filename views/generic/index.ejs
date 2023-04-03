@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,19 +13,18 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
   <link rel="stylesheet" 
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
   
 </head>
-
 <body class="font-poppins" id="particles-js">
   <background class="fixed top-0 left-0 w-screen h-screen">
     <wrap class="flex justify-center">
-      <section class="bg-cover object-bottom bg-center w-[98%] rounded-lg mt-[1rem]" style="background-image: url('dist/images/galati.jpeg'); ">
-       <%-  include("../partials/navbar.ejs") %>
+      <section class="bg-cover bg-center w-[98%] rounded-lg mt-[1rem]"
+        style="background-image: url('../dist/images/background.png'); ">
+       <%- include("../../partials/navbar.ejs")%>
         <section class="mb-[7rem]">
-          <p class="uppercase text-[#DEE2E6] pt-10 px-[5rem]">about us</p>
+          <p class="uppercase text-[#DEE2E6] pt-10 px-[5rem]">Homepage<a/>
           <div class="px-[5rem] flex justify-between">
             <div class="flex flex-col">
               <div class="flex flex-col ">
@@ -39,20 +37,35 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
                 </p>
               </div>
             </div>
-  
-            
+
+
           </div>
         </section>
       </section>
     </wrap>
-    
-
-    
+    <section class="pt-10 px-[5.5rem]">
+      <p class="text-[#DEE2E6] uppercase">Features</p>
+      <div class="flex flex-row justify-between">
+        <div class="flex flex-col ">
+          <p class="text-[3rem] bg-gradient-to-r from-button-blue to-purple-500 text-transparent bg-clip-text">
+            We build the base</p>
+          <p class="text-[3rem] text-[#DEE2E6]">for your future</p>
+        </div>
+        <div class="basis-2/6 mt-[1rem]">
+          <div class="flex flex-col">
+            <p class="text-sm text-[#DEE2E6]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis ipsum ut dolor ultricies, in
+              porttitor quam sollicitudin. Integer quis eros pulvinar, fringilla nunc non, convallis orci. Sed efficitur
+              urna porttitor massa sagittis sagittis. Proin ac justo neque. Praesent sit amet facilisis lorem, eu luctus
+              nisl. Donec mauris massa
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </background>
-  
-  <script src="../dist/scripts/partials/navbar.js"></script>
   <script src="../dist/scripts/particles/script.js"></script>
-  <script src="../dist/scripts/partials/navbar.js"></script>
+  <script src="../dist/scripts/particles/app.js"></script>
   <script src="../dist/scripts/particles/particles.min.js"></script>
 </body>
 </html>

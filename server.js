@@ -24,7 +24,7 @@ app.use('/', auth_router)
 const generic_router = require('./routes/generic.js');
 app.use('/', generic_router)
 
-const cities_router = require('./routes/generic.js');
+const cities_router = require('./routes/cities.js');
 app.use('/cities', cities_router)
 
 const newsletter_router = require('./routes/newsletter.js');
