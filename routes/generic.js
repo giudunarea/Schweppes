@@ -4,13 +4,20 @@ const router = express.Router();
 const db = require('../server_modules/db.js')
 const sessions = require('../server_modules/sessions.js')
 
-router.get('/', function(req, res) {
-  res.render('index.ejs');
+router.get('/', async function(req, res) {
+  
+  let session_id = req.cookies.auth
+  let user = null;
+  if (sessions.Data[session_id]) {
+  user = await db.user.findOne({username:sessions.Data[session_id].username})
+  }
+  
+  res.render('index.ejs' , {user:user});
 });
 
-router.get('/about', function(req, res) {
-  res.render('about.ejs');
-});
+//router.get('/about', function(req, res) {
+  //res.render('about.ejs');
+//});
 
 router.get('/cities', function(req, res) {
   res.render('cities.ejs');
