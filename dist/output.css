@@ -925,6 +925,11 @@ input[type="range"]::-ms-fill-lower{
   margin-right: auto;
 }
 
+.my-\[4rem\]{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -1498,6 +1503,30 @@ input[type="range"]::-ms-fill-lower{
 
 .pt-10{
   padding-top: 2.5rem;
+}
+
+.pb-8{
+  padding-bottom: 2rem;
+}
+
+.pt-8{
+  padding-top: 2rem;
+}
+
+.pt-4{
+  padding-top: 1rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
+}
+
+.pb-6{
+  padding-bottom: 1.5rem;
+}
+
+.pt-6{
+  padding-top: 1.5rem;
 }
 
 .text-left{

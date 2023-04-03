@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%-  include("../../partials/head.ejs")%>
+   <body class="font-poppins overflow-y-auto overflow-x-hidden scrollbar scrollbar-thin scrollbar-rounded-lg" id="particles-js">
+      <wrap class="flex justify-center">
+         <section class="bg-cover bg-center w-[98%] rounded-lg mt-[1rem]"
+            style="background-image: url('../dist/images/bucuresti.jpg'); ">
+            <%- include("../../partials/navbar.ejs")%>
+            <section class="mb-[7rem]">
+               <p class="uppercase text-[#DEE2E6] pt-10 px-[5rem]">Cities</p>
+               <div class="px-[5rem] flex justify-between">
+                  <div class="flex flex-col">
+                     <div class="flex flex-col ">
+                        <p class="text-[3rem] bg-gradient-to-r from-button-blue to-purple-500 bg-clip-text">
+                           Bucuresti
+                        </p>
+                        <p class="text-[3rem] text-[#DEE2E6]">the city of lights</p>
+                     </div>
+                     <div class="flex gap-1 items-center hover:underline no-underline underline-offset-1 text-[#DEE2E6] mt-6">
+                        <p class="text-[#DEE2E6] text-sm">Check us out! <i class="fa-solid fa-arrow-right text-button-blue"></i>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </section>
+      </wrap>
+      <section class="pt-10 px-[5.5rem] mb-[3rem]">
+          
+		  <%- include("../../partials/footer") %>
+      </section>
+	   
+      <script src="../dist/scripts/particles/script.js"></script>
+      <script src="../dist/scripts/particles/app.js"></script>
+      <script src="../dist/scripts/particles/particles.min.js"></script>
+   </body>
+</html>

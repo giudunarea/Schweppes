@@ -12,10 +12,23 @@ router.get('/:id', async function(req, res) {
             username: sessions.Data[session_id].username
         })
     }
-
-    res.render('./cities/allcities.ejs', {
-        user: user
-    });
+    if (req.params.id == "all"){
+      console.log(await db.city.find({}))
+      res.render('./cities/allcities.ejs', {
+        user: user,
+        title: "Cities",
+        cities: await db.city.find({})
+      });
+    }else{
+      let city = await db.city.findOne({name:req.params.id})
+      if(city){
+          res.render('./cities/profile.ejs', {
+          title: city.name ,
+          user: user,
+          city: city
+        });
+      }else res.status(404).send("City not found");
+    }
 });
 
 module.exports = router

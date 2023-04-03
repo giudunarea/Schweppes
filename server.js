@@ -29,6 +29,7 @@ app.use('/cities', cities_router)
 
 const newsletter_router = require('./routes/newsletter.js');
 app.use('/newsletters', newsletter_router)
+
 server.listen(3000, function(){
   console.log("Started")
 });

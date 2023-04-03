@@ -23,7 +23,7 @@
       </div>
       <div class="hidden w-full md:block md:w-auto transition duration-200" id="login-list">
          <div class="flex gap-4 ">
-            <% if (!user) { %>
+            <% if (!locals.user) { %>
             <button class="text-lg hover:text-button-blue transition-colors duration-200 text-alice-blue" onclick="window.location.href='/login';">
             Login
             </button>

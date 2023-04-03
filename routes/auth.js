@@ -90,11 +90,9 @@ router.post("/logout", async function(req, res) {
 
 
 router.get('/login', (req, res) => {
-    res.render('./auth/login.ejs');
+    res.render('./auth/login.ejs' , {title:"Login"});
 });
 router.get('/register', (req, res) => {
-    res.render('./auth/register.ejs', {
-        title: "plm"
-    });
+    res.render('./auth/register.ejs', {title: "Register"});
 });
 module.exports = router;

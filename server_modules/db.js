@@ -37,7 +37,24 @@ const user_schema = new Schema({
 const city_schema = new Schema({
     name: String,
     banner_image: String,
-    interests: []
+  
+    interests: {
+      parks:[
+        
+      ],
+      forests:[
+        
+      ],
+      shopping_centers:[
+        
+      ],
+      monuments:[
+        
+      ],
+      buildings:[
+        
+      ],
+    }
 });
 
 const news_schema = new Schema({
@@ -47,8 +64,10 @@ const news_schema = new Schema({
 
 const news = Mongoose.model('news', news_schema);
 const user = Mongoose.model('user', user_schema);
+const city = Mongoose.model('city', city_schema);
 
 module.exports = {
     user,
+    city,
     news
 }

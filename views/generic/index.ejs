@@ -1,23 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="../dist/css/home.css">
-      <link rel="stylesheet" href="../dist/output.css">
-      <link rel="icon" type="image/x-icon" href="dist/images/logo.png">
-      <title>Giu • Home</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-         crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link rel="stylesheet" 
-         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-   </head>
+   <%-  include("../../partials/head.ejs")%>
    <body class="font-poppins" id="particles-js">
-      <background class="fixed top-0 left-0 w-screen h-screen">
          <wrap class="flex justify-center">
             <section class="bg-cover bg-center w-[98%] rounded-lg mt-[1rem]"
                style="background-image: url('../dist/images/background.png'); ">
@@ -42,27 +26,30 @@
             </section>
          </wrap>
          <section class="pt-10 px-[5.5rem]">
-            <p class="text-[#DEE2E6] uppercase">Features</p>
+            <p class="text-[#DEE2E6] uppercase">Featured</p>
             <div class="flex flex-row justify-between">
                <div class="flex flex-col ">
                   <p class="text-[3rem] bg-gradient-to-r from-button-blue to-purple-500 text-transparent bg-clip-text">
-                     We build the base
+                     Check our most
                   </p>
-                  <p class="text-[3rem] text-[#DEE2E6]">for your future</p>
+                  <p class="text-[3rem] text-[#DEE2E6]">visited cities</p>
                </div>
                <div class="basis-2/6 mt-[1rem]">
                   <div class="flex flex-col">
                      <p class="text-sm text-[#DEE2E6]">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis ipsum ut dolor ultricies, in
-                        porttitor quam sollicitudin. Integer quis eros pulvinar, fringilla nunc non, convallis orci. Sed efficitur
-                        urna porttitor massa sagittis sagittis. Proin ac justo neque. Praesent sit amet facilisis lorem, eu luctus
-                        nisl. Donec mauris massa
+                       
+We cover everything from the must-see attractions and hidden gems, to the best restaurants and accommodations, as well as local customs and cultural experiences. Whether you're planning a weekend getaway, a family vacation, or a solo adventure, we've got you covered.
                      </p>
                   </div>
                </div>
             </div>
+
+			 <div>
+				 <div class="">
+					 <img src="">
+				 </div>
+			 </div>
          </section>
-      </background>
       <script src="../dist/scripts/particles/script.js"></script>
       <script src="../dist/scripts/particles/app.js"></script>
       <script src="../dist/scripts/particles/particles.min.js"></script>
