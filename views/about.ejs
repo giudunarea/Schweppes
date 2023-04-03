@@ -8,10 +8,12 @@
   <link rel="stylesheet" href="../dist/css/home.css">
   <link rel="stylesheet" href="../dist/output.css">
   <link rel="stylesheet" href="/css/home.css">
+  <link rel="icon" type="image/x-icon" href="dist/images/logo.png">
+  <title>Giu • About</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <link rel="icon" type="image/x-icon" href="./assets/logo.png">
+  <link rel="icon" type="image/x-icon" href="dist/images/logo.png">
   <title>Giu • Project</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -28,8 +30,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
   <div class="fixed top-0 left-0 w-screen h-screen font-poppins overflow-hidden">
     <nav class="p-5 bg-black shadow md:flex md:items-center md:justify-between">
   <div class="flex justify-between items-center">
-    <button class="text-2xl font-[Poppins] cursor-pointer" onclick="Menu(this)">
-      <img class="h-10 inline" src="../dist/images/logo.gif" alt="Logo">
+    <button class="text-2xl font-[Poppins] cursor-pointer" onclick="window.location.href='/'">
+      <img class="h-10 inline" src="../dist/images/logo.png" alt="Logo">
       GIU
     </button>
 
@@ -52,8 +54,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
       <a href="/views/settings.ejs" class="text-xl hover:text-cyan-500 duration-500">Settings</a>
     </li>
     <li>
-      <button type="button" class="bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded" aria-label="Login">
+      <button type="button" class="bg-transparent hover:bg-cyan-400 text-cyan-400 font-semibold hover:text-white py-2 px-4 border border-cyan-400 hover:border-transparent rounded duration-500 px-6 py-2 mx-4 my-6" aria-label="login">
         Login
+      </button>
+    </li>
+    <li>
+      <button type="button" class="bg-cyan-400 text-white font-[Poppins] duration-500 px-4 py-2  
+mx-4 hover:bg-transparent hover:text-cyan-400 border border-cyan-400 rounded" aria-label="Register">
+        Register
       </button>
     </li>
   </ul>

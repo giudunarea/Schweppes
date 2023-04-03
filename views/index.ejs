@@ -7,9 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../dist/css/home.css">
   <link rel="stylesheet" href="../dist/output.css">
-  <link rel="stylesheet" href="/css/home.css">
-  <link rel="icon" type="image/x-icon" href="./assets/logo.png">
-  <title>Giu • Project</title>
+  <link rel="icon" type="image/x-icon" href="dist/images/logo.png">
+  <title>Giu • Home</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,30 +24,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
   <background class="fixed top-0 left-0 w-screen h-screen">
     <wrap class="flex justify-center">
       <section class="bg-cover bg-center w-[98%] rounded-lg mt-[1rem]" style="background-image: url('../dist/images/background.png'); ">
-        <nav
-          class="flex justify-between items-center  text-alice-blue bg-[#282E30] h-[60px] py-[3rem] px-[4rem] bg-opacity-40">
-          <logo>
-            <h1 class="text-[1.6rem]"><span
-                class="bg-gradient-to-r from-button-blue to-purple-500 text-transparent bg-clip-text">Giu</span>Projects
-            </h1>
-          </logo>
-          <ol class="flex gap-6 text-lg items-center">
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Services</li>
-          </ol>
-          <div class="flex gap-4">
-            <button class="text-lg">
-              Login
-            </button>
-            <button
-              class="text-alice-blue py-1 px-4 text-lg border border-solid border-alice-blue hover:border-button-blue transition-colors duration-300 ease-in-out hover:text-button-blue"
-              draggable="false" style="user-select: none;">
-              Register
-            </button>
-          </div>
-        </nav>
+       <%-  include("../partials/navbar.ejs") %>
         <section class="mb-[7rem]">
           <p class="uppercase text-[#DEE2E6] pt-10 px-[5rem]">about us</p>
           <div class="px-[5rem] flex justify-between">
@@ -90,8 +66,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     
   </background>
   
-  <script src="https://particlesjs.nathanielx3rd.repl.co/particles.js"></script>
-  <script src="./scripts/app.js"></script>
-  <script src="./scripts/particles.min.js"></script>
+  <script src="../dist/scripts/partials/navbar.js"></script>
+  <script src="../dist/scripts/particles/script.js"></script>
+  <script src="../dist/scripts/partials/navbar.js"></script>
+  <script src="../dist/scripts/particles/particles.min.js"></script>
 </body>
 </html>

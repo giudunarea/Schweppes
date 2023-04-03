@@ -24,7 +24,7 @@ router.post('/register', async function(req, res) {
   
   new_user.save();
   
-  res.cookie('auth', session_id, { maxAge: 3600 * 1000 }).end(JSON.stringify({message:"Authorized"}));
+  res.cookie('auth', session_id, { maxAge: 3600 * 24 * 1000 }).end(JSON.stringify({message:"Authorized"}));
 })
 
 router.post("/login", async function(req, res) {
@@ -33,8 +33,8 @@ router.post("/login", async function(req, res) {
     if (await bcrypt.compare(req.body.password, foundUser.password)) {
       
     let session_id = randomstring.generate(50)
-    sessions.Data[session_id] = new sessions.Session(req.body.username,Date.now() + 3600 * 1000)
-    res.cookie('auth', session_id, { maxAge: 3600 * 1000 }).send(JSON.stringify({message:"Authenticated"}));
+    sessions.Data[session_id] = new sessions.Session(req.body.username,Date.now() + 3600 * 24 * 1000)
+    res.cookie('auth', session_id, { maxAge: 3600 * 24 * 1000 }).send(JSON.stringify({message:"Authenticated"}));
       
     } else {
       return res.status(401).end(JSON.stringify({message:"Incorrect password"}));

@@ -12,9 +12,7 @@ const user_schema = new Schema({
   email: { type: String, required: true },
   
   privilege: {type: String , default: "User"},
-  
-  created: { type: Date, default: Date.now },
-  auth: String
+  created: { type: Date, default: Date.now }
 });
 
 const news_schema = new Schema({

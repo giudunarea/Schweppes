@@ -11,12 +11,6 @@ router.post('/add', async function(req, res) {
 
   if (sessions.Data[session_id]) {
 
-    if(sessions.Data[session_id].isExpired() == true){
-      delete sessions.Data[session_id]
-      res.clearCookie('auth');
-      return res.redirect('/')
-    }
-
   let admin = await db.user.findOne({ privilege: "Admin", username: sessions.Data[session_id].username })
     
   if (admin) {
@@ -66,6 +60,6 @@ async function broadcast(arg) {
 }
 
 broadcast();
-setInterval(broadcast, 3600000);
+setInterval(broadcast, 3600/2 * 1000);
 
 module.exports = router

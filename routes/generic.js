@@ -16,12 +16,6 @@ router.get('/settings', async function(req, res) {
   let session_id = req.cookies.auth
 
   if (sessions.Data[session_id]) {
-
-    if(sessions.Data[session_id].isExpired() == true){
-      delete sessions.Data[session_id]
-      res.clearCookie('auth');
-      return res.redirect('/')
-    }
     
     let user = await db.user.findOne({username:sessions.Data[session_id].username})
     
