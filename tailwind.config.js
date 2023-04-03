@@ -3,7 +3,7 @@ const colors = require("tailwindcss/colors");
 const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: [
-    "./views/*.{ejs,html}", 
+    "./views/**/*.{ejs,html}",     
     "./partials/*.{ejs,html}",
   ],
   theme: {

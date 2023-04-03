@@ -1,5 +1,5 @@
 let Data = {
-  
+
 }
 
 class Session {
@@ -13,4 +13,7 @@ class Session {
     }
 }
 
-module.exports = {Session , Data}
+module.exports = {
+    Session,
+    Data
+}

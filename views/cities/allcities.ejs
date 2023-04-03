@@ -1,105 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../dist/css/home.css">
-  <link rel="stylesheet" href="../dist/output.css">
-  <link rel="icon" type="image/x-icon" href="dist/images/logo.png">
-  <title>Giu • Home</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
-  <link rel="stylesheet" 
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-  
-</head>
-
-<body class="font-poppins overflow-y-hidden" id="particles-js">
-    <wrap class="flex justify-center">
-      <section class="bg-cover bg-center w-[98%] rounded-lg mt-[1rem]"
-        style="background-image: url('../dist/images/background.png'); ">
-     <%- include("../../partials/navbar.ejs")%>
-        <section class="mb-[7rem]"> 
-          <p class="uppercase text-[#DEE2E6] pt-10 px-[5rem]">Cities</p>
-          <div class="px-[5rem] flex justify-between">
-            <div class="flex flex-col">
-              <div class="flex flex-col ">
-                <p class="text-[3rem] bg-gradient-to-r from-button-blue to-purple-500 text-transparent bg-clip-text">
-                  Empowering </p>
-                <p class="text-[3rem] text-[#DEE2E6]">your digital world</p>
-              </div>
-              <div class="flex gap-1 items-center hover:underline no-underline underline-offset-1 text-[#DEE2E6] mt-6">
-                <p class="text-[#DEE2E6] text-sm">Check us out! <i class="fa-solid fa-arrow-right text-button-blue"></i>
-                </p>
-              </div>
-            </div>
-
-
-          </div>
-        </section>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="../dist/css/home.css">
+      <link rel="stylesheet" href="../dist/output.css">
+      <link rel="icon" type="image/x-icon" href="dist/images/logo.png">
+      <title>Giu • Home</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+      <link rel="stylesheet" 
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+   </head>
+   <body class="font-poppins overflow-y-auto overflow-x-hidden scrollbar scrollbar-thin scrollbar-rounded-lg" id="particles-js">
+      <wrap class="flex justify-center">
+         <section class="bg-cover bg-center w-[98%] rounded-lg mt-[1rem]"
+            style="background-image: url('../dist/images/background.png'); ">
+            <%- include("../../partials/navbar.ejs")%>
+            <section class="mb-[7rem]">
+               <p class="uppercase text-[#DEE2E6] pt-10 px-[5rem]">Cities</p>
+               <div class="px-[5rem] flex justify-between">
+                  <div class="flex flex-col">
+                     <div class="flex flex-col ">
+                        <p class="text-[3rem] bg-gradient-to-r from-button-blue to-purple-500 text-transparent bg-clip-text">
+                           Empowering 
+                        </p>
+                        <p class="text-[3rem] text-[#DEE2E6]">your digital world</p>
+                     </div>
+                     <div class="flex gap-1 items-center hover:underline no-underline underline-offset-1 text-[#DEE2E6] mt-6">
+                        <p class="text-[#DEE2E6] text-sm">Check us out! <i class="fa-solid fa-arrow-right text-button-blue"></i>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </section>
+      </wrap>
+      <section class="pt-10 px-[5.5rem] mb-[3rem]">
+         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <a href="#"
+               class="flex flex-col rounded-md borderounded-lg shadow md:flex-row md:w-xl  border-gray-700 bg-[#282E30] hover:bg-gray-700">
+               <img class="object-cover w-full rounded-t-lg h-32 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                  src="../../dist/images/image.jpg" alt="">
+               <div class="flex flex-col justify-between p-4 leading-normal">
+                  <div>
+                     <p class="text-button-blue text-sm">Muntii | Peisaje</p>
+                     <h5 class="mb-2 text-2xl font-bold tracking-tight  text-white">Noteworthy technology acquisitions 2021</h5>
+                     <p class="mb-3 font-normal text-gray-400 ">Here are the biggest enterprise technology acquisitions of 2021 so
+                        far, in reverse chronological order.
+                     </p>
+                  </div>
+                  <button>
+                     <p class="p-3 text-alice-blue bg-button-blue rounded-md mt-[2rem]">View city profile</p>
+                  </button>
+               </div>
+            </a>
+            <a href="#"
+               class="flex flex-col rounded-md borderounded-lg shadow md:flex-row md:w-xl  border-gray-700 bg-[#282E30] hover:bg-gray-700">
+               <img class="object-cover w-full rounded-t-lg h-32 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                  src="../../dist/images/image.jpg" alt="">
+               <div class="flex flex-col justify-between p-4 leading-normal">
+                  <div>
+                     <p class="text-button-blue text-sm">Muntii | Peisaje</p>
+                     <h5 class="mb-2 text-2xl font-bold tracking-tight  text-white">Noteworthy technology acquisitions 2021</h5>
+                     <p class="mb-3 font-normal text-gray-400 ">Here are the biggest enterprise technology acquisitions of 2021 so
+                        far, in reverse chronological order.
+                     </p>
+                  </div>
+                  <button>
+                     <p class="p-3 text-alice-blue bg-button-blue rounded-md mt-[2rem]">View city profile</p>
+                  </button>
+               </div>
+            </a>
+            <a href="#"
+               class="flex flex-col rounded-md borderounded-lg shadow md:flex-row md:w-xl   border-gray-700 bg-[#282E30] hover:bg-gray-700">
+               <img class="object-cover w-full rounded-t-lg h-32 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                  src="../../dist/images/image.jpg" alt="">
+               <div class="flex flex-col justify-between p-4 leading-normal">
+                  <div>
+                     <p class="text-button-blue text-sm">Muntii | Peisaje</p>
+                     <h5 class="mb-2 text-2xl font-bold tracking-tight  text-white">Noteworthy technology acquisitions 2021</h5>
+                     <p class="mb-3 font-normal text-gray-400 ">Here are the biggest enterprise technology acquisitions of 2021 so
+                        far, in reverse chronological order.
+                     </p>
+                  </div>
+                  <button>
+                     <p class="p-3 text-alice-blue bg-button-blue rounded-md mt-[2rem]">View city profile</p>
+                  </button>
+               </div>
+            </a>
+         </div>
       </section>
-    </wrap>
-    <section class="pt-10 px-[5.5rem]">
-       <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-      <a href="#"
-      class="flex flex-col rounded-md borderounded-lg shadow md:flex-row md:w-xl  border-gray-700 bg-[#282E30] hover:bg-gray-700">
-      <img class="object-cover w-full rounded-t-lg h-32 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-        src="../../dist/images/image.jpg" alt="">
-      <div class="flex flex-col justify-between p-4 leading-normal">
-        <div>
-          <p class="text-button-blue text-sm">Muntii | Peisaje</p>
-          <h5 class="mb-2 text-2xl font-bold tracking-tight  text-white">Noteworthy technology acquisitions 2021</h5>
-          <p class="mb-3 font-normal text-gray-400 ">Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.</p>
-        </div>
-        <button>
-          <p class="p-3 text-alice-blue bg-button-blue rounded-md mt-[2rem]">View city profile</p>
-        </button>
-      </div>
-    </a>
-
-    <a href="#"
-      class="flex flex-col rounded-md borderounded-lg shadow md:flex-row md:w-xl  border-gray-700 bg-[#282E30] hover:bg-gray-700">
-      <img class="object-cover w-full rounded-t-lg h-32 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-        src="../../dist/images/image.jpg" alt="">
-      <div class="flex flex-col justify-between p-4 leading-normal">
-        <div>
-          <p class="text-button-blue text-sm">Muntii | Peisaje</p>
-          <h5 class="mb-2 text-2xl font-bold tracking-tight  text-white">Noteworthy technology acquisitions 2021</h5>
-          <p class="mb-3 font-normal text-gray-400 ">Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.</p>
-        </div>
-        <button>
-          <p class="p-3 text-alice-blue bg-button-blue rounded-md mt-[2rem]">View city profile</p>
-        </button>
-      </div>
-    </a>
-
-    <a href="#"
-    class="flex flex-col rounded-md borderounded-lg shadow md:flex-row md:w-xl   border-gray-700 bg-[#282E30] hover:bg-gray-700">
-    <img class="object-cover w-full rounded-t-lg h-32 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-      src="../../dist/images/image.jpg" alt="">
-    <div class="flex flex-col justify-between p-4 leading-normal">
-      <div>
-        <p class="text-button-blue text-sm">Muntii | Peisaje</p>
-        <h5 class="mb-2 text-2xl font-bold tracking-tight  text-white">Noteworthy technology acquisitions 2021</h5>
-        <p class="mb-3 font-normal text-gray-400 ">Here are the biggest enterprise technology acquisitions of 2021 so
-          far, in reverse chronological order.</p>
-      </div>
-      <button>
-        <p class="p-3 text-alice-blue bg-button-blue rounded-md mt-[2rem]">View city profile</p>
-      </button>
-    </div>
-  </a>
-    </div>
-    </section>
-  <script src="../dist/scripts/particles/script.js"></script>
-  <script src="../dist/scripts/particles/app.js"></script>
-  <script src="../dist/scripts/particles/particles.min.js"></script>
-</body>
+	   <%- include("../../partials/footer") %>
+      <script src="../dist/scripts/particles/script.js"></script>
+      <script src="../dist/scripts/particles/app.js"></script>
+      <script src="../dist/scripts/particles/particles.min.js"></script>
+   </body>
 </html>
