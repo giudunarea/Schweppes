@@ -12,6 +12,8 @@ app.use(bodyparser.urlencoded({ extended: false }))
 app.use(bodyparser.json())
 
 app.set('view engine', 'ejs')
+app.set('views','./views')
+
 app.use('/dist', express.static('dist'));
 
 const db = require('./server_modules/db.js')
@@ -24,7 +26,6 @@ app.use('/', generic_router)
 
 const newsletter_router = require('./routes/newsletter.js');
 app.use('/newsletters', newsletter_router)
-
 server.listen(3000, function(){
   console.log("Started")
 });

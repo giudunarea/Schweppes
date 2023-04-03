@@ -12,6 +12,12 @@ router.get('/about', function(req, res) {
   res.render('about.ejs');
 });
 
+router.get('/cities', function(req, res) {
+  res.render('cities.ejs');
+});
+
+
+
 router.get('/settings', async function(req, res) {
   let session_id = req.cookies.auth
 

@@ -15,6 +15,14 @@ const user_schema = new Schema({
   created: { type: Date, default: Date.now }
 });
 
+const city_schema = new Schema({
+  name: String,
+  banner : String,
+  interests:[
+    
+  ]
+});
+
 const news_schema = new Schema({
   title: String,
   html : String

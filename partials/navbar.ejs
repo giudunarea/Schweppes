@@ -1,25 +1,68 @@
- <nav
-          class="flex 2xl:justify-between xl:justify-between lg:justify-between md:justify-between sm:justify-between 2xl:items-center xl:items-center lg:items-center md:items-center sm:items-start text-alice-blue bg-[#282E30] h-[60px] py-[3rem] 2xl:px-[4rem] xl:px-[2.5rem] lg:px-[2.5rem] md:px-[2rem] sm:px-[1.5rem] 2xl:flex-row xl:flex-row lg:flex-row md:flex-row sm:flex-col flex-col bg-opacity-40">
-            <logo>
-              <h1 class="text-[1.6rem]"><span
-                  class="bg-gradient-to-r from-button-blue to-purple-500 text-transparent bg-clip-text">Giu</span>Projects
-              </h1>
-            </logo>
-            <ol class="flex gap-6 text-lg 2xl:items-center xl:items-center lg:items-center md:items-center sm:items-start items-start 2xl:flex-row lg:flex-row md:flex-row sm:flex-col flex-col">
-              <li class="hover:text-button-blue transition-colors duration-200 "><a href="">Home</a></li>
-              <li class="hover:text-button-blue transition-colors duration-200"><a href="">About</a></li>
-              <li class="hover:text-button-blue transition-colors duration-200"><a href="">Contact</a></li>
-              <li class="hover:text-button-blue transition-colors duration-200"><a href="">Services</a></li>
-            </ol>
-            <div class="flex gap-4">
-              <button class="text-lg hover:text-button-blue transition-colors duration-200">
-                Login
-              </button>
-              <button
-                class="text-alice-blue py-1 px-4 text-lg border border-solid border-alice-blue hover:border-button-blue transition-colors duration-300 ease-in-out hover:text-button-blue"
-                draggable="false" style="user-select: none;">
-                Register
-              </button>
-            </div>
-            
-        </nav>
+
+
+<nav class="border-gray-200 bg-opacity-40 bg-[#282E30]">
+   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="#" class="flex items-center">
+         <logo>
+            <h1 class="text-[1.6rem] text-alice-blue"><span
+               class="bg-gradient-to-r from-button-blue to-purple-500 text-transparent bg-clip-text">Giu</span>Projects
+            </h1>
+         </logo>
+      </a>
+      <button data-collapse-toggle="navbar-solid-bg" type="button" class="inline-flex items-center p-2 ml-3 text-sm  rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 text-button-blue" aria-controls="navbar-solid-bg" aria-expanded="false" id="button_nav">
+         <span class="sr-only">Open main menu</span>
+         <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+         </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+         <ul class="flex flex-col font-medium mt-4 text-lg rounded-lg bg-[#282E30] bg-opacity-40 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent transition duration-200 text-alice-blue">
+            <li class="hover:text-button-blue transition-colors duration-200 "><a href="/">Home</a></li>
+            <li class="hover:text-button-blue transition-colors duration-200"><a href="/about">About</a></li>
+            <li class="hover:text-button-blue transition-colors duration-200"><a href="/cities">Cities</a></li>
+            <li class="hover:text-button-blue transition-colors duration-200"><a href="">Services</a></li>
+         </ul>
+      </div>
+      <div class="hidden w-full md:block md:w-auto transition duration-200" id="login-list">
+         <div class="flex gap-4 ">
+            <button class="text-lg hover:text-button-blue transition-colors duration-200 text-alice-blue">
+            Login
+            </button>
+            <button
+               class="text-alice-blue py-1 px-4 text-lg border border-solid border-alice-blue hover:border-button-blue transition-colors duration-300 ease-in-out hover:text-button-blue"
+               draggable="false" style="user-select: none;">
+            Register
+            </button>
+         </div>
+      </div>
+   </div>
+</nav>
+<script>
+   links = document.getElementById("navbar-solid-bg");
+   login = document.getElementById("login-list");
+   button = document.getElementById("button_nav");
+   let hidden = true
+   
+   button.addEventListener("click", function() {
+     if (hidden == true ) {
+      links.style.display = "block";
+      login.style.display = "block";
+      hidden=false;
+     }
+     else  {
+      links.style.display = "none";
+      login.style.display = "none";
+      hidden=true;
+     }
+   })
+   
+   window.addEventListener('resize',function(){
+     if(window.innerWidth >= 767){
+     links.style.display = "block";
+     login.style.display = "block";
+     hidden=false;
+     }
+   })
+
+</script>
+
