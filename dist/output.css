@@ -1335,6 +1335,14 @@ input[type="range"]::-ms-fill-lower{
   --tw-bg-opacity: 0.5;
 }
 
+.bg-opacity-30{
+  --tw-bg-opacity: 0.3;
+}
+
+.bg-opacity-60{
+  --tw-bg-opacity: 0.6;
+}
+
 .bg-gradient-to-r{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1788,6 +1796,15 @@ input[type="range"]::-ms-fill-lower{
 .hover\:text-button-blue:hover{
   --tw-text-opacity: 1;
   color: rgb(64 92 245 / var(--tw-text-opacity));
+}
+
+.hover\:text-transparent:hover{
+  color: transparent;
+}
+
+.hover\:text-black:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover{

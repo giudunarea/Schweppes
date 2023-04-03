@@ -11,7 +11,6 @@ router.get('/', async function(req, res) {
   if (sessions.Data[session_id]) {
   user = await db.user.findOne({username:sessions.Data[session_id].username})
   }
-  
   res.render('index.ejs' , {user:user});
 });
 

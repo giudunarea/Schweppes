@@ -44,6 +44,17 @@ router.post("/login", async function(req, res) {
   }
 })
 
+router.post("/logout", async function(req, res) {
+  let session_id = req.cookies.auth
+  if(sessions.Data[session_id]){
+    delete sessions.Data[session_id];
+    res.clearCookie("auth").send(JSON.stringify({message:'Logged out!'}));
+    console.log(sessions.Data)
+  }else{
+    res.status(404).send(JSON.stringify({message:'No account'}));
+  }
+})
+
 router.get('/register', (req, res) => {
   res.render('register.ejs', { title: "plm" });
 });
