@@ -17,6 +17,21 @@ router.get('/', async function(req, res) {
     });
 });
 
+router.get('/journey-quiz', async function(req, res) {
+    let session_id = req.cookies.auth
+    let user = null;
+    if (sessions.Data[session_id]) {
+        user = await db.user.findOne({
+            username: sessions.Data[session_id].username
+        })
+    }
+  
+    res.render('./generic/quiz.ejs', {
+        user: user
+    });
+    
+});
+
 router.get('/settings', async function(req, res) {
     let session_id = req.cookies.auth
 

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+   <%-  include("../../partials/head.ejs")%>
+   <body class="font-poppins" id="particles-js">
+         <wrap class="flex justify-center">
+            <section class="bg-cover bg-center w-[98%] rounded-lg mt-[1rem]"
+               style="background-image: url('../dist/images/background.png'); ">
+               <%- include("../../partials/navbar.ejs")%>
+               <section class="mb-[7rem]">
+                  <p class="uppercase text-[#DEE2E6] pt-10 px-[5rem]">Homepage<a/>
+                  <div class="px-[5rem] flex justify-between">
+                     <div class="flex flex-col">
+                        <div class="flex flex-col ">
+                           <p class="text-[3rem] bg-gradient-to-r from-button-blue to-purple-500 text-transparent bg-clip-text">
+                              Empowering 
+                           </p>
+                           <p class="text-[3rem] text-[#DEE2E6]">your digital world</p>
+                        </div>
+                        <div class="flex gap-1 items-center hover:underline no-underline underline-offset-1 text-[#DEE2E6] mt-6">
+                           <p class="text-[#DEE2E6] text-sm">Check us out! <i class="fa-solid fa-arrow-right text-button-blue"></i>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </section>
+         </wrap>
+         <div class="flex gap-4 px-[3rem]">
+  <div class="w-1/2 bg-[#282E30] w-[98%] p-4 px-[4rem] rounded-lg"><div class="flex gap-3">
+           <div>
+             <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 text-white">Select your country</label>
+<select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500">
+  <option>United States</option>
+  <option>Canada</option>
+  <option>France</option>
+  <option>Germany</option>
+</select>
+           </div>
+           <div>
+             <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 text-white">Select your country</label>
+<select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500">
+  <option>United States</option>
+  <option>Canada</option>
+  <option>France</option>
+  <option>Germany</option>
+</select>
+           </div>
+         </div></div>
+  <div class="w-1/2 bg-[#282E30] w-[98%] p-4 items-center justify-center rounded-lg">Container 2</div>
+</div>
+
+         
+      <script src="../dist/scripts/particles/script.js"></script>
+      <script src="../dist/scripts/particles/app.js"></script>
+      <script src="../dist/scripts/particles/particles.min.js"></script>
+   </body>
+</html>
