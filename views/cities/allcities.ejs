@@ -2,6 +2,7 @@
 <html lang="en">
    <%-  include("../../partials/head.ejs")%>
    <body class="font-poppins overflow-y-auto overflow-x-hidden scrollbar scrollbar-thin scrollbar-rounded-lg" id="particles-js">
+     <div id="googleMap"></div>
       <wrap class="flex justify-center">
          <section class="bg-cover bg-center w-[98%] rounded-lg mt-[1rem]"
             style="background-image: url('../dist/images/background.png'); ">
@@ -30,7 +31,7 @@
           <% for (let index = 0 ; index < cities.length ; index ++) { %>
            
             <a href="/cities/<%=cities[index].name%>" 
-               class="flex flex-col rounded-md borderounded-lg shadow md:flex-row md:w-xl  border-gray-700 bg-[#282E30] hover:bg-gray-700 hd-10re">
+               class="flex flex-col rounded-md borderounded-lg shadow md:flex-row md:w-xl  border-gray-700 bg-[#282E30] hover:bg-gray-700">
                <img class="object-cover w-full rounded-t-lg h-32 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
                   src=<%=cities[index].banner_image%> alt="">
                <div class="flex flex-col justify-between p-4 leading-normal">
