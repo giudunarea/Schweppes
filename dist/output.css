@@ -1062,8 +1062,8 @@ input[type="range"]::-ms-fill-lower{
   height: 2rem;
 }
 
-.h-\[\]{
-  height: ;
+.h-\[500px\]{
+  height: 500px;
 }
 
 .h-auto{
@@ -1076,26 +1076,6 @@ input[type="range"]::-ms-fill-lower{
 
 .h-screen{
   height: 100vh;
-}
-
-.h-2\/6{
-  height: 33.333333%;
-}
-
-.h-\[300px\]{
-  height: 300px;
-}
-
-.h-\[300p\]{
-  height: 300p;
-}
-
-.h-\[300\]{
-  height: 300;
-}
-
-.h-\[500px\]{
-  height: 500px;
 }
 
 .w-1\/2{
@@ -1221,8 +1201,16 @@ input[type="range"]::-ms-fill-lower{
           appearance: none;
 }
 
+.grid-flow-col{
+  grid-auto-flow: column;
+}
+
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-rows-2{
+  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row{
@@ -2251,10 +2239,6 @@ input[type="range"]::-ms-fill-lower{
 
   .md\:flex-row{
     flex-direction: row;
-  }
-
-  .md\:flex-col{
-    flex-direction: column;
   }
 
   .md\:items-center{
