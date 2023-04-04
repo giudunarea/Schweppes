@@ -1456,6 +1456,10 @@ input[type="range"]::-ms-fill-lower{
   background-color: rgb(255 255 255 / 0.3);
 }
 
+.bg-gray-800\/30{
+  background-color: rgb(31 41 55 / 0.3);
+}
+
 .bg-opacity-40{
   --tw-bg-opacity: 0.4;
 }
@@ -2013,6 +2017,10 @@ input[type="range"]::-ms-fill-lower{
   background-color: rgb(255 255 255 / 0.5);
 }
 
+.group:hover .group-hover\:bg-gray-800\/60{
+  background-color: rgb(31 41 55 / 0.6);
+}
+
 .group:focus .group-focus\:outline-none{
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -2027,6 +2035,10 @@ input[type="range"]::-ms-fill-lower{
 .group:focus .group-focus\:ring-white{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
+}
+
+.group:focus .group-focus\:ring-gray-800\/70{
+  --tw-ring-color: rgb(31 41 55 / 0.7);
 }
 
 .peer:-moz-placeholder-shown ~ .peer-placeholder-shown\:translate-y-0{
