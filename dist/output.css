@@ -1089,6 +1089,10 @@ input[type="range"]::-ms-fill-lower{
   width: 100vw;
 }
 
+.w-1{
+  width: 0.25rem;
+}
+
 .min-w-0{
   min-width: 0px;
 }
@@ -1107,6 +1111,10 @@ input[type="range"]::-ms-fill-lower{
 
 .max-w-lg{
   max-width: 32rem;
+}
+
+.max-w-xl{
+  max-width: 36rem;
 }
 
 .flex-1{
@@ -1593,6 +1601,11 @@ input[type="range"]::-ms-fill-lower{
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-bold{
@@ -2132,6 +2145,14 @@ input[type="range"]::-ms-fill-lower{
     width: auto;
   }
 
+  .md\:w-full{
+    width: 100%;
+  }
+
+  .md\:w-1\/2{
+    width: 50%;
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -2165,6 +2186,11 @@ input[type="range"]::-ms-fill-lower{
 
   .md\:bg-transparent{
     background-color: transparent;
+  }
+
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
@@ -2207,6 +2233,16 @@ input[type="range"]::-ms-fill-lower{
 
   .lg\:overflow-y-hidden{
     overflow-y: hidden;
+  }
+
+  .lg\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .lg\:overflow-y-hidden.scrollbar{
