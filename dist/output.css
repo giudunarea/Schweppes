@@ -989,6 +989,14 @@ input[type="range"]::-ms-fill-lower{
   margin-top: 6rem;
 }
 
+.mt-2{
+  margin-top: 0.5rem;
+}
+
+.ml-\[3\.3rem\]{
+  margin-left: 3.3rem;
+}
+
 .block{
   display: block;
 }
@@ -1035,10 +1043,6 @@ input[type="range"]::-ms-fill-lower{
 
 .h-screen{
   height: 100vh;
-}
-
-.h-60{
-  height: 15rem;
 }
 
 .w-1\/2{
@@ -1095,6 +1099,14 @@ input[type="range"]::-ms-fill-lower{
 
 .max-w-screen-xl{
   max-width: 1280px;
+}
+
+.max-w-full{
+  max-width: 100%;
+}
+
+.max-w-lg{
+  max-width: 32rem;
 }
 
 .flex-1{
@@ -1699,12 +1711,6 @@ input[type="range"]::-ms-fill-lower{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-md{
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .transition{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1869,6 +1875,13 @@ input[type="range"]::-ms-fill-lower{
   height: 8px;
 }
 
+.line-clamp-4{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
 .focus\:border-blue-500:focus{
   --tw-border-opacity: 1;
   border-color: rgb(63 131 248 / var(--tw-border-opacity));
@@ -1982,6 +1995,10 @@ input[type="range"]::-ms-fill-lower{
   text-decoration-color: #F0F8FF;
 }
 
+.hover\:line-clamp-none:hover{
+  -webkit-line-clamp: unset;
+}
+
 .dark .dark\:border-gray-600{
   --tw-border-opacity: 1;
   border-color: rgb(75 85 99 / var(--tw-border-opacity));
@@ -2087,14 +2104,6 @@ input[type="range"]::-ms-fill-lower{
     margin-top: 3rem;
   }
 
-  .md\:mb-\[3rem\]{
-    margin-bottom: 3rem;
-  }
-
-  .md\:mt-\[2rem\]{
-    margin-top: 2rem;
-  }
-
   .md\:block{
     display: block;
   }
@@ -2111,10 +2120,6 @@ input[type="range"]::-ms-fill-lower{
     height: auto;
   }
 
-  .md\:h-96{
-    height: 24rem;
-  }
-
   .md\:w-48{
     width: 12rem;
   }
@@ -2125,10 +2130,6 @@ input[type="range"]::-ms-fill-lower{
 
   .md\:w-auto{
     width: auto;
-  }
-
-  .md\:w-80{
-    width: 20rem;
   }
 
   .md\:flex-row{

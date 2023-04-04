@@ -3,6 +3,7 @@
     "dev": "npx tailwindcss -i ./styleforall.css -o ./dist/output.css --watch"
   },
   "dependencies": {
+    "@tailwindcss/line-clamp": "^0.4.4",
     "bcrypt": "^5.1.0",
     "body-parser": "^1.20.2",
     "bootstrap-icons": "^1.10.3",

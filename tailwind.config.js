@@ -8,6 +8,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      lineClamp: {
+        7 : "7",
+        8 : "8",
+        9 : "9",
+        10 : "10",
+        11 : "11",
+        12 : "12",
+      },
       zIndex: {
         "-1": "-1",
         1: "1",
@@ -93,6 +101,7 @@ module.exports = {
     require("tailwindcss"),
     require("tailwind-scrollbar")({ nocompatible: true }),
     require('flowbite/plugin'),
+    require('@tailwindcss/line-clamp'),
   ],
   corePlugins: {
     
