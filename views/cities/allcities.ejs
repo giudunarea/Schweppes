@@ -27,21 +27,24 @@
       </wrap>
       <section class="pt-10 px-[5.5rem] mb-[3rem]">
          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          <% for (let city = 0 ; city < cities.length ; city ++) { %>
-            <a href="#"
-               class="flex flex-col rounded-md borderounded-lg shadow md:flex-row md:w-xl  border-gray-700 bg-[#282E30] hover:bg-gray-700">
+          <% for (let index = 0 ; index < cities.length ; index ++) { %>
+           
+            <a href="/cities/<%=cities[index].name%>" 
+               class="flex flex-col rounded-md borderounded-lg shadow md:flex-row md:w-xl  border-gray-700 bg-[#282E30] hover:bg-gray-700 hd-10re">
                <img class="object-cover w-full rounded-t-lg h-32 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                  src="../../dist/images/image.jpg" alt="">
+                  src=<%=cities[index].banner_image%> alt="">
                <div class="flex flex-col justify-between p-4 leading-normal">
                   <div>
+                    
+                     <% cities[index].name = cities[index].name.charAt(0).toUpperCase()
+  + cities[index].name.slice(1) %>
+                       
                      <p class="text-button-blue text-sm">Muntii | Peisaje</p>
-                     <h5 class="mb-2 text-2xl font-bold tracking-tight  text-white">Noteworthy technology acquisitions 2021</h5>
-                     <p class="mb-3 font-normal text-gray-400 ">Here are the biggest enterprise technology acquisitions of 2021 so
-                        far, in reverse chronological order.
-                     </p>
+                     <h5 class="mb-2 text-2xl font-bold tracking-tight  text-white"><%=cities[index].name%></h5>
+                     <p class="mb-3 font-normal text-gray-400 "><%=cities[index].description%></p>
                   </div>
                   <button>
-                     <p class="p-3 text-alice-blue bg-button-blue rounded-md mt-[2rem]">View city profile</p>
+                     <p class="p-3 text-alice-blue bg-button-blue rounded-md mt-[2rem]">View City</p>
                   </button>
                </div>
             </a>

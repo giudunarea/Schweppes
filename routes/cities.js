@@ -13,7 +13,6 @@ router.get('/:id', async function(req, res) {
         })
     }
     if (req.params.id == "all"){
-      console.log(await db.city.find({}))
       res.render('./cities/allcities.ejs', {
         user: user,
         title: "Cities",
@@ -27,7 +26,7 @@ router.get('/:id', async function(req, res) {
           user: user,
           city: city
         });
-      }else res.status(404).send("City not found");
+      }else res.status(404).send("404 | City not found");
     }
 });
 
