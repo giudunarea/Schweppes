@@ -38,7 +38,7 @@ const city_schema = new Schema({
     name: String,
     banner_image: String,
     description: String,
-  
+    
     interests: {
       parks:[
         

@@ -16,55 +16,28 @@
                         </p>
                         <p class="text-[3rem] text-[#DEE2E6] bg-opacity-50 bg-[#282E30] rounded-lg">The city of lights</p>
                      </div>
-                     <div class="flex gap-1 items-center hover:underline no-underline underline-offset-1 text-[#DEE2E6] mt-6">
-                        <p class="text-[#DEE2E6] text-sm">Check us out! <i class="fa-solid fa-arrow-right text-button-blue"></i>
-                        </p>
-                     </div>
                   </div>
                </div>
             </section>
          </section>
       </wrap>
       <section class="pt-14 md:px-[5.5rem]  mb-[3rem]">
-         <div class="flex justify-between md:flex-row flex-col space-y-[3rem]">
-         <div class="p-6 flex justify-center">
-            <div class="flex flex-col gap-1 md:w-full md:margin-0">
-               <div class="flex flex-col">
-                  <p class="text-[3rem] bg-gradient-to-r from-button-blue to-purple-500 text-transparent bg-clip-text">
-                     Check our most
-                  </p>
-                  <p class="text-[3rem] text-[#DEE2E6]">visited cities</p>
-                  </div
-                  <p class="text-sm md:text-md lg:text-lg text-gray-400">
-                     <%=city.description%>
-                  </p>
-               </div>
-            </div>
-            <style>
-               @media screen and (min-width: 640px) {
-               .md\:w-1\/2 { width: 50%; }
-               .text-2xl { font-size: 1.5rem; }
-               .text-sm { font-size: 0.875rem; }
-               }
-               @media screen and (min-width: 768px) {
-               .lg\:text-4xl { font-size: 2.25rem; }
-               .text-md { font-size: 1rem; }
-               }
-               @media screen and (min-width: 1024px) {
-               .lg\:text-lg { font-size: 1.125rem; }
-               }
-            </style>
-            <div>
-            </div>
-            <div class="w-1/2 p-4 flex justify-center">
-               <div class="flex gap-3 md:flex-row flex-col">
-                 <div id="google_map" class="h-full w-full">
-                   google_maps
-                 </div>
-               </div>
-            </div>
-         </div>
+         <div class="flex justify-between md:flex-row flex-col gap-4">
+    <div class="w-1/2 p-6 flex justify-center ">
+      <div class="flex flex-col gap-1">
+        <h1 class="text-[3rem] text-alice-blue">The Paris <span class="bg-gradient-to-r from-button-blue to-purple-500 text-transparent bg-clip-text">of the East</span></h1>
+        <p class="text-md text-gray-400"><%=city.description%></p>
+      </div>
+    </div>
+    <div class="w-1/2 p-4 h-[500px] flex justify-center">
+			<div id="google_map" class="w-full rounded-lg" >
+                 google_map
+            </div>  
+    </div>
+  </div>
+        
       </section>
+
       <section class="flex justify-center items-center pt-8 md:px-[5.5rem]  mb-[3rem]">
          <div class="flex md:flex-col gap-4 flex-col">
             <div class="flex justify-center flex-col gap-2 sm:flex-row">
@@ -135,9 +108,13 @@
       <script src="../dist/scripts/particles/particles.min.js"></script> 
       <script>
       function myMap() {
+        var city_obj = <%-JSON.stringify(city)%>
+        console.log(city_obj.loc[1].$numberDecimal);
+        
         var mapProp= {
-          center:new google.maps.LatLng(51.508742,-0.120850),
-          zoom:5,
+          center:new google.maps.LatLng(city_obj.loc[0].$numberDecimal,city_obj.loc[1].$numberDecimal),
+          zoom:11,
+          mapId:'d419190f5970e70b',
         };
         var map = new google.maps.Map(document.getElementById("google_map"),mapProp);
         }
