@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-	<%-  include("../../partials/head.ejs")%>
+   <%-  include("../../partials/head.ejs")%>
    <body class="font-poppins overflow-y-auto overflow-x-hidden scrollbar scrollbar-thin scrollbar-rounded-lg" id="particles-js">
       <wrap class="flex justify-center">
          <section class="bg-cover bg-center w-[98%] rounded-lg mt-[1rem]"
-            style="background-image: url('../dist/images/bucuresti.jpg'); ">
+            style="background-image: url('<%=city.banner_image%>'); ">
             <%- include("../../partials/navbar.ejs")%>
             <section class="mb-[7rem]">
                <p class="uppercase text-[#DEE2E6] pt-10 px-[5rem]">Cities</p>
@@ -25,51 +25,69 @@
             </section>
          </section>
       </wrap>
-      <section class="pt-14 px-[5.5rem] mb-[3rem]">
-		  <div class="flex justify-between md:flex-row flex-col gap-4">
-    <div class="p-6 flex justify-center">
-  <div class="flex flex-col gap-1 md:w-full md:margin-0">
-    <div class="flex flex-col ">
-                  <p class="text-[3rem] bg-gradient-to-r from-button-blue to-purple-500 text-transparent bg-clip-text">
-                     Check our most
-                  </p>
-                  <p class="text-[3rem] text-[#DEE2E6]">visited cities</p>
-               </div
-    <p class="text-sm md:text-md lg:text-lg text-gray-400">
-      Bucharest, known as the "Paris of the East," is the vibrant capital city of Romania located in the southeastern part of the country. With its elegant architecture, wide boulevards, and reputation as a center for art and culture in the region, Bucharest offers visitors a unique blend of Eastern European charm and sophistication. The city has a rich history that dates back to the 15th century, when it was founded by Vlad the Impaler, the inspiration behind the legendary figure of Dracula. Over the centuries, Bucharest has undergone many changes and has been influenced by a variety of cultures, including Ottoman, French, and Soviet.<br><br> Today, it is a thriving metropolis that is home to over two million people and is the economic, cultural, and political center of Romania.
-    </p>
-  </div>
-</div>
-
-<style>
-@media screen and (min-width: 640px) {
-  .md\:w-1\/2 { width: 50%; }
-  .text-2xl { font-size: 1.5rem; }
-  .text-sm { font-size: 0.875rem; }
-}
-@media screen and (min-width: 768px) {
-  .lg\:text-4xl { font-size: 2.25rem; }
-  .text-md { font-size: 1rem; }
-}
-@media screen and (min-width: 1024px) {
-  .lg\:text-lg { font-size: 1.125rem; }
-}
-</style>
-
-    <div class="w-1/2 p-4 flex justify-center">
-      <div class="flex gap-3 md:flex-row flex-col">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d182321.71624805694!2d25.954553533185234!3d44.43774014259286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f93abf3cad4f%3A0xac0632e37c9ca628!2sBucure%C8%99ti!5e0!3m2!1sro!2sro!4v1680600349491!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" class="rounded-md flex items-center justify-center" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-  </div>
-        
+      <section class="pt-14 md:px-[5.5rem]  mb-[3rem]">
+         <div class="flex justify-between md:flex-row flex-col gap-4">
+            <div class="p-6 flex justify-center">
+               <div class="flex flex-col gap-1 md:w-full md:margin-0">
+                  <div class="flex flex-col ">
+                     <p class="text-[3rem] bg-gradient-to-r from-button-blue to-purple-500 text-transparent bg-clip-text">
+                        Check our most
+                     </p>
+                     <p class="text-[3rem] text-[#DEE2E6]">visited cities</p>
+                     </div
+                     <p class="text-sm md:text-md lg:text-lg text-gray-400">
+                        <%=city.description%>
+                     </p>
+                  </div>
+               </div>
+               <style>
+                  @media screen and (min-width: 640px) {
+                  .md\:w-1\/2 { width: 50%; }
+                  .text-2xl { font-size: 1.5rem; }
+                  .text-sm { font-size: 0.875rem; }
+                  }
+                  @media screen and (min-width: 768px) {
+                  .lg\:text-4xl { font-size: 2.25rem; }
+                  .text-md { font-size: 1rem; }
+                  }
+                  @media screen and (min-width: 1024px) {
+                  .lg\:text-lg { font-size: 1.125rem; }
+                  }
+               </style>
+               <div class="w-1/2 p-4 flex justify-center">
+                  <div class="flex gap-3 md:flex-row flex-col">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d182321.71624805694!2d25.954553533185234!3d44.43774014259286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f93abf3cad4f%3A0xac0632e37c9ca628!2sBucure%C8%99ti!5e0!3m2!1sro!2sro!4v1680600349491!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" class="rounded-md flex items-center justify-center" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+               </div>
+            </div>
       </section>
-	   <section class="pt-14 px-[5.5rem] mb-[3rem]">
-		<div class="flex justify-between md:flex-row flex-col gap-4">
-
-		   
-	   </section>
-	     <%- include("../../partials/footer") %>
+	   <% let c = 0 %>
+	   <% for(let cat in city.interests){ %>
+	   <% if(c==5){break}else{c++} %>
+	   <% let cat_name = cat.charAt(0).toUpperCase() + cat.slice(1); %>
+	   <h1 class="text-[3rem] flex justify-center"><span class="bg-gradient-to-r from-button-blue to-purple-500 bg-clip-text"><%=cat_name%></span></h1>
+		  <% for(let interest = 0 ; interest < city.interests[cat].length ; interest++){ %>
+	      <section class="pt-14 md:px-[5.5rem] mb-[3rem]">
+	      <div class="flex justify-between md:flex-row flex-col gap-8">
+	      <div class="flex flex-col gap-1 md:w-full md:margin-0">
+	      <figure class="max-w-lg">
+	      <img class="h-auto max-w-full rounded-lg" src="../../dist/images/cover.webp" alt="image description">
+	      <figcaption class="mt-2 text-sm text-center text-gray-400"><%=city.name%></figcaption>
+	      </figure>
+	      </div>
+	      <div class=""w-1/2 p-4 flex items-start">
+	      <div class="flex gap-3 flex-col">
+	      <h3 class="text-[2rem]"><%=city.interests[cat][interest].name%></h3>
+	      <div class="">
+	      <p class="mb-3 text-gray-400"><%=city.interests[cat][interest].description%></p>
+	      </div>
+	      </div>
+	      </div>
+	      </div>
+	      </section>
+		  <%}%>
+	<%}%>
+      <%- include("../../partials/footer") %>
       <script src="../dist/scripts/particles/script.js"></script>
       <script src="../dist/scripts/particles/app.js"></script>
       <script src="../dist/scripts/particles/particles.min.js"></script>
