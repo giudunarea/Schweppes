@@ -29,7 +29,7 @@
          <div class="flex justify-between md:flex-row flex-col space-y-[3rem]">
          <div class="p-6 flex justify-center">
             <div class="flex flex-col gap-1 md:w-full md:margin-0">
-               <div class="flex flex-col ">
+               <div class="flex flex-col">
                   <p class="text-[3rem] bg-gradient-to-r from-button-blue to-purple-500 text-transparent bg-clip-text">
                      Check our most
                   </p>
@@ -58,7 +58,9 @@
             </div>
             <div class="w-1/2 p-4 flex justify-center">
                <div class="flex gap-3 md:flex-row flex-col">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91160.56688901967!2d26.024426288881585!3d44.4379268155231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f93abf3cad4f%3A0xac0632e37c9ca628!2sBucure%C8%99ti!5e0!3m2!1sro!2sro!4v1680632691118!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" class="rounded-md" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                 <div id="google_map" class="h-full w-full">
+                   google_maps
+                 </div>
                </div>
             </div>
          </div>
@@ -130,6 +132,16 @@
       <%- include("../../partials/footer") %>
       <script src="../dist/scripts/particles/script.js"></script>
       <script src="../dist/scripts/particles/app.js"></script>
-      <script src="../dist/scripts/particles/particles.min.js"></script>
+      <script src="../dist/scripts/particles/particles.min.js"></script> 
+      <script>
+      function myMap() {
+        var mapProp= {
+          center:new google.maps.LatLng(51.508742,-0.120850),
+          zoom:5,
+        };
+        var map = new google.maps.Map(document.getElementById("google_map"),mapProp);
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4E4Nu_GKbQKSGMIlIKbTdwwwKfoWxMYc&callback=myMap"></script>
    </body>
 </html>
