@@ -6,15 +6,15 @@
          <section class="bg-cover bg-center w-[98%] rounded-lg mt-[1rem]"
             style="background-image: url('<%=city.banner_image%>'); ">
             <%- include("../../partials/navbar.ejs")%>
-            <section class="mb-[7rem]">
-               <p class="uppercase text-[#DEE2E6] pt-10 px-[5rem]">Cities</p>
+            <section class="mb-[7rem] mt-4">
                <div class="px-[5rem] flex justify-between">
                   <div class="flex flex-col">
                      <div class="flex flex-col">
-                        <p class="text-[3rem] text-bold bg-opacity-50 bg-[#282E30] rounded-lg mb-1.5">
-                           Bucuresti
+                         <p class="text-[3rem] text-bold bg-opacity-50 bg-[#282E30] rounded-lg mb-1.5 ">
+                          <% let city_name_uppercase = city.name.charAt(0).toUpperCase() + city.name.slice(1); %>
+                          <%= city_name_uppercase %>
                         </p>
-                        <p class="text-[3rem] text-[#DEE2E6] bg-opacity-50 bg-[#282E30] rounded-lg">The city of lights</p>
+                        <p class="text-[3rem] text-[#DEE2E6] bg-opacity-50 bg-[#282E30] rounded-lg">Roam Free in Romania</p>
                      </div>
                   </div>
                </div>
@@ -25,13 +25,16 @@
          <div class="flex justify-between md:flex-row flex-col gap-4">
     <div class="w-1/2 p-6 flex justify-center ">
       <div class="flex flex-col gap-1">
-        <h1 class="text-[3rem] text-alice-blue">The Paris <span class="bg-gradient-to-r from-button-blue to-purple-500 text-transparent bg-clip-text">of the East</span></h1>
+        <h1 class="text-[3rem] text-alice-blue"><span class="bg-gradient-to-r from-button-blue to-purple-500 text-transparent bg-clip-text"></span></h1>
         <p class="text-md text-gray-400"><%=city.description%></p>
       </div>
     </div>
+	<div>
+		
+	</div>
     <div class="w-1/2 p-4 h-[500px] flex justify-center">
 			<div id="google_map" class="w-full rounded-lg" >
-                 google_map
+                 
             </div>  
     </div>
   </div>
@@ -39,7 +42,7 @@
       </section>
 
       <section class="flex justify-center items-center pt-8 md:px-[5.5rem]  mb-[3rem]">
-            <div class="flex justify-center flex-col  sm:flex-row">
+            <div class="flex justify-center flex-col sm:flex-row">
                <div class="p-4 flex items-center justify-center">
                   <div class="flex flex-col gap-2 w-5/6">
                      <% let c = 0 %>
@@ -62,7 +65,7 @@
                            <!-- Item 1 -->
                            <%for (let intrst_index_ = 0 ; intrst_index_ < city.interests[cat].length ; intrst_index_++){%>
                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                              <img src="<%=city.interests[cat][intrst_index_].image%>" class="absolute block object-fill w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                              <img src="<%=city.interests[cat][intrst_index_].image%>" class="absolute block object-cover object-center w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                            </div>
                           <%}%>
                         </div>
@@ -91,15 +94,16 @@
                         </button>
                      </div>
                      <%} else {%>
+                       <%if(city.interests[cat][0]){%>
                        <div class="">
-                              <img src="<%=city.interests[cat][0].image%>" class="block w-full rounded-md" alt="...">
-                        </div>
+                              <img src="<%=city.interests[cat][0].image%>" class="block w-full rounded-md object-cover object-center" alt="...">
+                        </div><%}%>
                      <%}%>
                      <%}%>
                   </div>
                </div>
             </div>
-         </div>
+         
       </section>
       <%- include("../../partials/footer") %>
       <script src="../dist/scripts/particles/script.js"></script>
@@ -119,5 +123,6 @@
         }
       </script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4E4Nu_GKbQKSGMIlIKbTdwwwKfoWxMYc&callback=myMap"></script>
+        
    </body>
 </html>

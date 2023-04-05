@@ -4,7 +4,7 @@
    <body class="font-poppins overflow-y-auto overflow-x-hidden scrollbar scrollbar-thin scrollbar-rounded-lg" id="particles-js">
          <wrap class="flex justify-center">
             <section class="bg-cover bg-center w-[98%] rounded-lg mt-[1rem]"
-               style="background-image: url('../dist/images/background.png'); ">
+               style="background-image: url('../dist/images/homebg.jpg'); ">
                <%- include("../../partials/navbar.ejs")%>
                <section class="mb-[7rem]">
                   <p class="uppercase text-[#DEE2E6] pt-10 px-[5rem]">Homepage<a/>
@@ -12,13 +12,9 @@
                      <div class="flex flex-col">
                         <div class="flex flex-col ">
                            <p class="text-[3rem] bg-gradient-to-r from-button-blue to-purple-500 text-transparent bg-clip-text">
-                              Empowering 
+                              Explore the Beauty of Romania: 
                            </p>
-                           <p class="text-[3rem] text-[#DEE2E6]">your digital world</p>
-                        </div>
-                        <div class="flex gap-1 items-center hover:underline no-underline underline-offset-1 text-[#DEE2E6] mt-6">
-                           <p class="text-[#DEE2E6] text-sm">Check us out! <i class="fa-solid fa-arrow-right text-button-blue"></i>
-                           </p>
+                           <p class="text-[3rem] text-[#DEE2E6]">Where History Meets Nature.</p>
                         </div>
                      </div>
                   </div>
@@ -26,14 +22,14 @@
             </section>
          </wrap>
      
-         <section class="pt-10 px-[5.5rem]">
+         <section class="pt-10 px-[5.5rem]"> 
             <p class="text-[#DEE2E6] uppercase">Featured</p>
-            <div class="flex flex-row justify-between">
+            <div class="flex flex-col sm:flex-row justify-between">
                <div class="flex flex-col ">
-                  <p class="text-[3rem] bg-gradient-to-r from-button-blue to-purple-500 text-transparent bg-clip-text">
+                  <p class="md:text-[3rem] text-[1.6rem] bg-gradient-to-r from-button-blue to-purple-500 text-transparent bg-clip-text">
                      Check our most
                   </p>
-                  <p class="text-[3rem] text-[#DEE2E6]">visited cities</p>
+                  <p class="md:text-[3rem] text-[1.6rem] text-[#DEE2E6]">visited cities</p>
                </div>
                <div class="basis-2/6 mt-[1rem]">
                   <div class="flex flex-col">
@@ -45,36 +41,37 @@ We cover everything from the must-see attractions and hidden gems, to the best r
                </div>
             </div>
          </section>
-	     <section class="pt-10 px-[5.5rem]">
-			 <div class="flex justify-between items-center">
-				<div class="flex gap-4">
-  <div class="flex flex-col items-center gap-2 shrink">
+	     <section class="pt-10 px-[5.5rem] ">
+			 
+			 <div class="flex flex-col sm:flex-row justify-between">
+				<div class="flex flex-col sm:flex-row gap-4 ">
+  <div class="flex flex-col items-center gap-2 ">
     <div class="w-72 h-56">
-      <img src="../../dist/images/background.png" class="rounded-md object-cover w-full h-full">
+      <img src="https://media.capital.ro/wp-content/uploads/2020/10/bucuresti.jpg" class="rounded-md object-cover w-full h-full">
     </div>
-    <p class="text-md text-gray-400">Oras</p>
+    <a class="text-md text-gray-400" href="/cities/bucuresti">Bucuresti</a>
   </div>
   <div class="flex flex-col items-center gap-2">
     <div class="w-72 h-56">
-      <img src="../../dist/images/background.png" class="rounded-md object-cover w-full h-full">
+      <img src="https://www.cniptarad.ro/storage/texts/000/000/19/arad-mg-7375.jpg" class="rounded-md object-cover w-full h-full">
     </div>
-    <p class="text-md text-gray-400">Oras</p>
+    <p class="text-md text-gray-400" href="/cities/arad">Arad</p>
   </div>
   <div class="flex flex-col items-center gap-2">
     <div class="w-72 h-56">
-      <img src="../../dist/images/background.png" class="rounded-md object-cover w-full h-full">
+      <img src="https://romaniatourism.com/images/galati/galati-romania-view.jpg" class="rounded-md object-cover w-full h-full">
     </div>
-    <p class="text-md text-gray-400">Oras</p>
+    <a class="text-md text-gray-400" href="/cities/galati">Galati</a>
   </div>
 </div>
-				 <div class="flex flex-col gap-4 mb-20">
+				 <div class="flex flex-col gap-4 mb-10">
                    <div class="flex gap-2 items-center">
 					   <span class="flex w-14 h-14 items-center justify-center bg-gray-400 rounded-full border-astro-black border-opacity-50">
 						   <p class="text-alice-blue">1</p>
 					   </span>
 					   <div class="flex flex-col items-start gap-1">
-						   <h1 class="text-xl text-button-blue">Brasov</h1>
-					   <p class="text-md text-400-gray">3000 matches on the quiz</p>
+						   <h1 class="text-xl text-button-blue">Bucuresti</h1>
+					   <p class="text-md text-400-gray">Arcul de Triumf</p>
 					   </div>
 				   </div>
 					 <div class="flex gap-2 items-center">
@@ -83,7 +80,7 @@ We cover everything from the must-see attractions and hidden gems, to the best r
 					   </span>
 					   <div class="flex flex-col items-start gap-1">
 						   <h1 class="text-xl text-button-blue">Brasov</h1>
-					   <p class="text-md text-400-gray">3000 matches on the quiz</p>
+					   <p class="text-md text-400-gray">Poiana Brasov</p>
 					   </div>
 				   </div>
 					 <div class="flex gap-2 items-center">
@@ -91,16 +88,17 @@ We cover everything from the must-see attractions and hidden gems, to the best r
 						   <p class="text-alice-blue">3</p>
 					   </span>
 					   <div class="flex flex-col items-start gap-1">
-						   <h1 class="text-xl text-button-blue">Brasov</h1>
-					   <p class="text-md text-400-gray">3000 matches on the quiz</p>
+						   <h1 class="text-xl text-button-blue">Galati</h1>
+					   <p class="text-md text-400-gray">Turnul televiziunii</p>
 					   </div>
 				   </div>
 					 
 				 </div>
 				 
 			 </div>
-
-		<%- include("../../partials/footer.ejs") %>
+       <section>
+		<%- include("../../partials/footer.ejs") %>   
+	   </section>
 		 </section>
 	   
       <script src="../dist/scripts/particles/script.js"></script>

@@ -22,6 +22,19 @@ router.get('/journey-quiz', async function(req, res) {
     }
 });
 
+router.post('/journey_quiz',async function(req,res){
+    let session_id = req.cookies.auth
+    let user = null;
+    if (sessions.Data[session_id]) {
+        user = await db.user.findOne({
+            username: sessions.Data[session_id].username,
+            cities: await db.city.find({})
+        })
+    }
+    if(!user) return res.status(401).send("Please login")
+    
+})
+
 router.get('/:id', async function(req, res) {
     let session_id = req.cookies.auth
     let user = null;
@@ -44,8 +57,13 @@ router.get('/:id', async function(req, res) {
           user: user,
           city: city
         });
-      }else res.status(404).send("404 | City not found");
+      }else res.status(404).render("./generic/404.ejs");
     }
 });
+
+
+router.get('/bilete-tren',function(req,res){
+  
+})
 
 module.exports = router

@@ -3,18 +3,15 @@
    <%- include("../../partials/head.ejs")%>
    <body class="font-poppins scrollbar scrollbar-thin scrollbar-rounded-lg overflow-y-auto overflow-x-hidden" id="particles-js">
       <wrap class="flex justify-center">
-         <section class="mt-[1rem] w-[98%] rounded-lg bg-cover bg-center" style="background-image: url('../dist/images/background.png'); ">
+         <section class="mt-[1rem] w-[98%] rounded-lg bg-cover bg-center" style="background-image: url('../dist/images/homebg.jpg'); ">
             <%- include("../../partials/navbar.ejs")%>
             <section class="mb-[7rem]">
-               <p class="px-[5rem] pt-10 uppercase text-[#DEE2E6]">Homepage<a /></p>
+               <p class="px-[5rem] pt-10 uppercase text-[#DEE2E6]">quiz<a /></p>
                <div class="flex justify-between px-[5rem]">
                   <div class="flex flex-col">
                      <div class="flex flex-col">
-                        <p class="from-button-blue bg-gradient-to-r to-purple-500 bg-clip-text text-[3rem] text-transparent">Empowering</p>
-                        <p class="text-[3rem] text-[#DEE2E6]">your digital world</p>
-                     </div>
-                     <div class="mt-6 flex items-center gap-1 text-[#DEE2E6] no-underline underline-offset-1 hover:underline">
-                        <p class="text-sm text-[#DEE2E6]">Check us out! <i class="fa-solid fa-arrow-right text-button-blue"></i></p>
+                        <p class="from-button-blue bg-gradient-to-r to-purple-500 bg-clip-text text-[3rem] text-transparent">Discover your</p>
+                        <p class="text-[3rem] text-[#DEE2E6]">inner explorer</p>
                      </div>
                   </div>
                </div>
@@ -30,46 +27,48 @@
                      <h1 class="text-alice-blue text-center text-xl">Select the transportation method</h1>
                      <p class="px-20 text-center text-sm text-gray-400">Please select your transportation method in order to take the quiz and select the desired destination for your vacantion</p>
                   </div>
+				   
                   <div class="mb-2 inline-flex rounded-md shadow-sm" role="group">
-                     <button type="button" class="hover:text-button-blue focus:ring-button-blue focus:text-button-blue inline-flex items-center rounded-l-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:ring-2">
+                     <button type="button" id="switch-car" class="hover:text-button-blue focus:ring-button-blue focus:text-button-blue inline-flex items-center rounded-l-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:ring-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                            <path fill="currentColor" d="M6 19v1q0 .425-.288.713T5 21H4q-.425 0-.713-.288T3 20v-8l2.1-6q.15-.45.537-.725T6.5 5h11q.475 0 .863.275T18.9 6l2.1 6v8q0 .425-.287.713T20 21h-1q-.425 0-.713-.288T18 20v-1H6Zm-.2-9h12.4l-1.05-3H6.85L5.8 10ZM5 12v5v-5Zm2.5 4q.625 0 1.063-.438T9 14.5q0-.625-.438-1.063T7.5 13q-.625 0-1.063.438T6 14.5q0 .625.438 1.063T7.5 16Zm9 0q.625 0 1.063-.438T18 14.5q0-.625-.438-1.063T16.5 13q-.625 0-1.063.438T15 14.5q0 .625.438 1.063T16.5 16ZM5 17h14v-5H5v5Z" />
                         </svg>
                      </button>
-                     <button type="button" class="hover:text-button-blue focus:ring-button-blue focus:text-button-blue inline-flex items-center rounded-r-lg border-b border-t border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:ring-2">
+                     <button type="button" id="switch-train" class="hover:text-button-blue focus:ring-button-blue focus:text-button-blue inline-flex items-center rounded-r-lg border-b border-t border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:ring-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                            <path fill="currentColor" d="M4 15.5V6q0-1.325.688-2.113t1.812-1.2q1.125-.412 2.563-.55T12 2q1.65 0 3.113.138t2.55.55q1.087.412 1.712 1.2T20 6v9.5q0 1.475-1.012 2.488T16.5 19l1.5 1.5v.5h-2l-2-2h-4l-2 2H6v-.5L7.5 19q-1.475 0-2.488-1.012T4 15.5ZM12 4q-2.65 0-3.875.313T6.45 5h11.2q-.375-.425-1.612-.713T12 4Zm-6 6h5V7H6v3Zm10.5 2H6h12h-1.5ZM13 10h5V7h-5v3Zm-4.5 6q.65 0 1.075-.425T10 14.5q0-.65-.425-1.075T8.5 13q-.65 0-1.075.425T7 14.5q0 .65.425 1.075T8.5 16Zm7 0q.65 0 1.075-.425T17 14.5q0-.65-.425-1.075T15.5 13q-.65 0-1.075.425T14 14.5q0 .65.425 1.075T15.5 16Zm-8 1h9q.65 0 1.075-.425T18 15.5V12H6v3.5q0 .65.425 1.075T7.5 17ZM12 5h5.65h-11.2H12Z" />
                         </svg>
                      </button>
                   </div>
                </div>
+				
                <div class="flex flex-col items-center">
                   <div class="flex w-1/2 flex-col items-center">
-                     <div class="flex flex-col gap-2">
-                       <div class="flex">
-                       <select id="countries" class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500">
-                           <option selected>Departure</option>
-                           <%for(let index = 0 ; index < cities.length ; index++){%>
-                            <%let uppercase_name = cities[index].name.charAt(0).toUpperCase() + cities[index].name.slice(1)%>
-                           <option value="<%=cities[index].name%>"><%=uppercase_name%></option>
-                           <%}%>
-                        </select>
-                             
-                        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2.5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-</svg>
-</button>
+                     <div class="flex flex-col ">
+                        <div class="flex mb-2" id="origin-parent">
+                           <select id="select-origin" class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 mr-2 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500">
+                              <option selected>Departure</option>
+                              <%for(let index = 0 ; index < cities.length ; index++){%>
+                              <%let uppercase_name = cities[index].name.charAt(0).toUpperCase() + cities[index].name.slice(1)%>
+                              <option value="<%=cities[index].name%>"><%=uppercase_name%></option>
+                              <%}%>
+                           </select>
+                           <button id="select-origin-add" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3
+                              py-full dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 text-2xl">+
+                           </button>
                         </div>
-                        <select id="countries" class="mb-2 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500">
+                        <div id="waypoint-holder">
+                        </div>
+                        <select id="destination" class="mb-2 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500">
                            <option selected>Destination</option>
                            <%for(let index = 0 ; index < cities.length ; index++){%>
-                            <%let uppercase_name = cities[index].name.charAt(0).toUpperCase() + cities[index].name.slice(1)%>
+                           <%let uppercase_name = cities[index].name.charAt(0).toUpperCase() + cities[index].name.slice(1)%>
                            <option value="<%=cities[index].name%>"><%=uppercase_name%></option>
                            <%}%>
                         </select>
                      </div>
                      <div class="relative mb-4 max-w-sm flex items-center">
-                        <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                        <div class="px-2.5 py-2.5 pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
                            <svg aria-hidden="true" class="h-5 w-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
                            </svg>
@@ -77,9 +76,16 @@
                         <input datepicker type="text" class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 pl-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500" placeholder="Select date" />
                      </div>
                   </div>
-                  <button type="button" class="mb-2 mr-2 rounded-lg bg-blue-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+							   
+                  <button type="button" class="mb-2 mr-2 rounded-lg bg-blue-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" id="submit-quiz">Submit</button>
                </div>
-              <hr class="mt-4 mb-4">
+               <hr class="mt-4 mb-4">
+               <div class="flex flex-col gap-4 items-center">
+                  <h1 class="text-alice-blue text-center text-xl">This is your trip</h1>
+                  <div class="h-[500px]">
+                     <iframe  id="google_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d182321.8188604852!2d25.92982905823954!3d44.437707256779845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f93abf3cad4f%3A0xac0632e37c9ca628!2sBucure%C8%99ti!5e0!3m2!1sro!2sro!4v1680687541997!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+               </div>
                <div class="items-center" id = "error_div">
                   <div class="flex flex-col items-center">
                      <div class="flex flex-col items-center ">
@@ -97,6 +103,95 @@
       <script src="../dist/scripts/particles/app.js"></script>
       <script src="../dist/scripts/particles/particles.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/datepicker.min.js"></script>
-      <script src="../dist/scripts/pages/cities/quiz.js"></script>
+      <script>
+         let error_div = document.getElementById('error_div')
+         error_div.style.display = "none";
+
+         document.getElementById("google_map").style.display = "none"
+        
+         let mode = "car"
+         let waypoints = [];
+         
+         let origin_el = [
+         document.getElementById('origin-parent'),
+         document.getElementById('select-origin'), // select
+         document.getElementById('select-origin-add') // button +
+         ]
+         
+         let switch_travels = [
+         document.getElementById('switch-car'),
+         document.getElementById('switch-train')
+         ]
+         
+         let destination_el = document.getElementById('destination')
+         let waypoint_holder = document.getElementById('waypoint-holder')
+         
+         origin_el[2].addEventListener('click', function(e) {
+         let waypoint_select = origin_el[0].cloneNode(true)
+         waypoint_holder.appendChild(waypoint_select)
+         
+         waypoint_select.children[1].innerText = "-"
+         
+         waypoint_select.children[1].addEventListener('click', function() {
+            waypoint_select.remove();
+            waypoints.splice(waypoints.indexOf(waypoint_select))
+           console.log(waypoints)
+         })
+         
+         waypoints.push(waypoint_select)
+         })
+         
+         let submit_but = document.getElementById("submit-quiz")
+         submit_but.addEventListener("click", function() {
+           if (mode == "car") {
+           let cities_ = <%- JSON.stringify(cities) %>  
+
+           let waypoints__str = ""
+             
+           if(waypoints.length == 1) { waypoints__str = waypoints[0].children[0].value } else {
+              for(let __index = 0 ; __index < waypoints.length ; __index++){
+                if(__index == waypoints.length - 1){
+                      waypoints__str = waypoints__str + waypoints[__index].children[0].value
+                }else{
+                      waypoints__str = waypoints__str + waypoints[__index].children[0].value + "|"
+                }
+              }
+           }
+          
+             
+           let src___ = "https://www.google.com/maps/embed/v1/directions?key=AIzaSyD4E4Nu_GKbQKSGMIlIKbTdwwwKfoWxMYc&" + "origin=" +  origin_el[1].value + "&destination=" +  destination_el.value
+             
+           if (waypoints.length > 0){
+             src___ = src___ + "&waypoints=" + waypoints__str
+           }
+          
+           document.getElementById("google_map").setAttribute("src",src___)
+           document.getElementById("google_map").style.display = "block"
+             
+           } else {
+             console.log("123")
+             let src___ = "https://bilete.tfc-online.ro/ro-RO/Itineraries?DepartureStationName="+ 
+origin_el[1].value + "&ArrivalStationName=" + destination_el.value + "%20Nord&DepartureDate=05.04.2023"
+             
+           document.getElementById("google_map").setAttribute("src",src___)
+           document.getElementById("google_map").style.display = "block"
+           }
+         })
+         
+         switch_travels[1].addEventListener('click', function() {
+         console.log(waypoints)
+         for (let index = 0; index < waypoints.length; index++) {
+         waypoints[index].remove()
+         }
+         waypoints = [];
+         document.getElementById("google_map").style.display = "none"
+         mode = "train"
+         })
+         
+         switch_travels[0].addEventListener('click', function() {
+         document.getElementById("google_map").style.display = "none"
+         mode = "car"
+         })
+      </script>
    </body>
 </html>
