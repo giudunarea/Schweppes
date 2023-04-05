@@ -39,7 +39,7 @@
       </section>
 
       <section class="flex justify-center items-center pt-8 md:px-[5.5rem]  mb-[3rem]">
-            <div class="flex justify-center flex-col gap-2 sm:flex-row space-y-[]">
+            <div class="flex justify-center flex-col  sm:flex-row">
                <div class="p-4 flex items-center justify-center">
                   <div class="flex flex-col gap-2 w-5/6">
                      <% let c = 0 %>
@@ -62,7 +62,7 @@
                            <!-- Item 1 -->
                            <%for (let intrst_index_ = 0 ; intrst_index_ < city.interests[cat].length ; intrst_index_++){%>
                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                              <img src="<%=city.interests[cat][intrst_index_].image%>" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                              <img src="<%=city.interests[cat][intrst_index_].image%>" class="absolute block object-fill w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                            </div>
                           <%}%>
                         </div>
@@ -92,7 +92,7 @@
                      </div>
                      <%} else {%>
                        <div class="">
-                              <img src="<%=city.interests[cat][0].image%>" class="block w-full" alt="...">
+                              <img src="<%=city.interests[cat][0].image%>" class="block w-full rounded-md" alt="...">
                         </div>
                      <%}%>
                      <%}%>

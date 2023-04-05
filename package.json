@@ -12,6 +12,7 @@
     "email-validator": "^2.0.4",
     "express": "^4.18.2",
     "flowbite": "^1.6.4",
+    "flowbite-datepicker": "^1.2.2",
     "mongoose": "^7.0.3",
     "nodemailer": "^6.9.1",
     "nodemon": "^2.0.22",

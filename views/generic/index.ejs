@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
    <%-  include("../../partials/head.ejs")%>
-   <body class="font-poppins" id="particles-js">
+   <body class="font-poppins overflow-y-auto overflow-x-hidden scrollbar scrollbar-thin scrollbar-rounded-lg" id="particles-js">
          <wrap class="flex justify-center">
             <section class="bg-cover bg-center w-[98%] rounded-lg mt-[1rem]"
                style="background-image: url('../dist/images/background.png'); ">
@@ -44,13 +44,65 @@ We cover everything from the must-see attractions and hidden gems, to the best r
                   </div>
                </div>
             </div>
-
-			 <div>
-				 <div class="">
-					 <img src="">
-				 </div>
-			 </div>
          </section>
+	     <section class="pt-10 px-[5.5rem]">
+			 <div class="flex justify-between items-center">
+				<div class="flex gap-4">
+  <div class="flex flex-col items-center gap-2 shrink">
+    <div class="w-72 h-56">
+      <img src="../../dist/images/background.png" class="rounded-md object-cover w-full h-full">
+    </div>
+    <p class="text-md text-gray-400">Oras</p>
+  </div>
+  <div class="flex flex-col items-center gap-2">
+    <div class="w-72 h-56">
+      <img src="../../dist/images/background.png" class="rounded-md object-cover w-full h-full">
+    </div>
+    <p class="text-md text-gray-400">Oras</p>
+  </div>
+  <div class="flex flex-col items-center gap-2">
+    <div class="w-72 h-56">
+      <img src="../../dist/images/background.png" class="rounded-md object-cover w-full h-full">
+    </div>
+    <p class="text-md text-gray-400">Oras</p>
+  </div>
+</div>
+				 <div class="flex flex-col gap-4 mb-20">
+                   <div class="flex gap-2 items-center">
+					   <span class="flex w-14 h-14 items-center justify-center bg-gray-400 rounded-full border-astro-black border-opacity-50">
+						   <p class="text-alice-blue">1</p>
+					   </span>
+					   <div class="flex flex-col items-start gap-1">
+						   <h1 class="text-xl text-button-blue">Brasov</h1>
+					   <p class="text-md text-400-gray">3000 matches on the quiz</p>
+					   </div>
+				   </div>
+					 <div class="flex gap-2 items-center">
+					   <span class="flex w-14 h-14 items-center justify-center bg-gray-400 rounded-full">
+						   <p class="text-alice-blue">2</p>
+					   </span>
+					   <div class="flex flex-col items-start gap-1">
+						   <h1 class="text-xl text-button-blue">Brasov</h1>
+					   <p class="text-md text-400-gray">3000 matches on the quiz</p>
+					   </div>
+				   </div>
+					 <div class="flex gap-2 items-center">
+					   <span class="flex w-14 h-14 items-center justify-center bg-gray-400 rounded-full">
+						   <p class="text-alice-blue">3</p>
+					   </span>
+					   <div class="flex flex-col items-start gap-1">
+						   <h1 class="text-xl text-button-blue">Brasov</h1>
+					   <p class="text-md text-400-gray">3000 matches on the quiz</p>
+					   </div>
+				   </div>
+					 
+				 </div>
+				 
+			 </div>
+
+		<%- include("../../partials/footer.ejs") %>
+		 </section>
+	   
       <script src="../dist/scripts/particles/script.js"></script>
       <script src="../dist/scripts/particles/app.js"></script>
       <script src="../dist/scripts/particles/particles.min.js"></script>
